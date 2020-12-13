@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="css/320.css" type="text/css" media="screen">
+</head>
+<body>
+<div class="fullWidth">
+  <div class="wrapper">
+    <div class="full_content">
+      <div class="overlay"></div>
+      <div class="left_menu active">
+        <div class="left_menu_top">
+          <div class="logo">
+            <a href="#">
+              <img src="images/logo_red.svg" alt="Артлайф" style="width: 52px" />
+              <img class="lhid" src="images/logo_1.png" alt="Артлайф"/>
+            </a>
+          </div>
+        </div>
+        <div class="nav active">
+          <ul>
+            <li>
+              <a href="#" class="nav_parent">
+                  <span class="ico">
+                    <img src="images/i1.svg" alt=""/>
+                  </span>
+                <span class="ico_t">Работа с сетью</span>
+              </a>
+              <ul class="sub_menu">
+                <li><a href="#">Карточка склада</a></li>
+                <li><a href="#">Иерархия дочерних складов</a></li>
+                <li><a href="#">Создание пользователей склада</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nav_parent">
+                  <span class="ico">
+                    <img src="images/i2.svg" alt=""/>
+                  </span>
+                <span class="ico_t">Лицевые счета</span>
+              </a>
+              <ul class="sub_menu">
+                <li><a href="#">Детализация по лицевому счёту склада</a></li>
+                <li><a href="#">Детализация по лицевому счёту партнёра</a></li>
+                <li><a href="#">Движение Денежных Средств по складу</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nav_parent">
+                  <span class="ico">
+                    <img src="images/i3.svg" alt=""/>
+                  </span>
+                <span class="ico_t">Маркетинг план</span>
+              </a>
+              <ul class="sub_menu">
+                <li><a href="#">Все товарные документы</a></li>
+                <li><a href="#">Складские обороты</a></li>
+                <li><a href="#">Каталог/ складские остатки</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nav_parent">
+                  <span class="ico">
+                    <img src="images/i4.svg" alt=""/>
+                  </span>
+                <span class="ico_t">Управление</span>
+              </a>
+              <ul class="sub_menu">
+                <li><a href="#">Партнёры</a></li>
+                <li><a href="#">Регистрация партнёра</a></li>
+                <li><a href="#">Карточка партнёра</a></li>
+                <li><a href="#">История организации по периодам*</a></li>
+                <li><a href="#">История показателей партнёра по периодам *</a></li>
+                <li><a href="#">История бонусов (КЕ) *</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header">
+        <div class="acc_b">
+          <div class="acc_b_menu">
+            <img src="images/burger-menu.svg" alt="">
+          </div>
+          <div class="acc_n">
+            <div class="acc_n_text">Компания</div>
+            <div class="acc_n_ico">
+              <img src="images/avatar.svg" alt=""/>
+            </div>
+            <div class="acc_nav">
+              <ul>
+                <li><a href="#">Название склада</a></li>
+                <li><a href="#"><span>Статус</span>Директор</a></li>
+                <li class="logout"><a href="#">Выйти</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="c_head">
+          <h1>Классический МП</h1>
+        </div>
+        <div class="component">
+          <div class="tabs_block">
+            <span class="tabs_block_text">ПО ПАРТНЕРАМ</span>
+            <span class="tabs_block_text active">ПО ПЕРИОДАМ</span>
+          </div>
+          <div class="component_head">
+            <div class="l_p">
+              <div class="line_param_input">
+                <label style="font-size: 12px; color: #9A9A9A;">Период от и до</label>
+                <input type="text" placeholder="01.04.2020 - 09.09.2020"/>
+                <span class="calendar"></span>
+              </div>
+            </div>
+          </div>
+          <div class="component_tags">
+            <div style="float: left; margin: 5px 25px 0 0">
+              <span>Теги фильтров:</span>
+            </div>
+            <div class="tags">Название фильтра 1<span class="closes"></span></div>
+            <div class="tags">Название фильтра 2<span class="closes"></span></div>
+          </div>
+          <div class="component_body" style="margin-top: 20px">
+            <div class="l_p" style="padding-right: 0; margin-bottom: 20px">
+              <div class="nav_links" style="margin-top: 0">
+                <a class="brd_green fill w50 add_partner" href="#">Рассчитать бонусы</a>
+              </div>
+            </div>
+            <div class="r_p" style="padding-right: 0; margin-bottom: 20px">
+              <div class="nav_links" style="margin-top: 0">
+                <a class="brd_green w50 last" href="#" style="margin-left: 0">Закрыть период</a>
+                <a class="brd_green w50 last" href="#" style="margin-right: 0">Возврат к предыдущему периоду</a>
+              </div>
+            </div>
+            <div class="nav_top">
+              <ul>
+                <li><a href="#">Экспорт в Excel</a></li>
+                <li><a href="#">Печать</a></li>
+              </ul>
+            </div>
+            <div class="middle_part">
+              <div>
+                <table class="otch_p bordered">
+                  <thead>
+                    <tr class="head_t">
+                      <th style="width: 9%; padding-right: 25px">
+                        <div>
+                          <span>Р/период</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                      <th style="padding-right: 25px">
+                        <div>
+                          <span>ПЛП</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                      <th style="padding-right: 25px">
+                        <div>
+                          <span>ПРГ</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                      <th style="padding-right: 25px">
+                        <div>
+                          <span>ПРР</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                      <th style="width: 10%; padding-right: 25px">
+                        <div>
+                          <span>ПРГО</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                      <th style="width: 10%; padding-right: 25px">
+                        <div>
+                          <span>ПСп</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                      <th style="padding-right: 25px">
+                        <div>
+                          <span>ПРО</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                      <th style="padding-right: 25px">
+                        <div>
+                          <span>ПЭС</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                      <th style="padding-right: 25px">
+                        <div>
+                          <span>СерП</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                      <th style="padding-right: 25px">
+                        <div>
+                          <span>Авто/Дом</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Январь 2020</td>
+                      <td>207 000, 12344</td>
+                      <td>888345</td>
+                      <td>207 000, 12344</td>
+                      <td>4538.94</td>
+                      <td>4538.94</td>
+                      <td>133</td>
+                      <td>2334</td>
+                      <td>2334</td>
+                      <td>207 000,12344</td>
+                    </tr>
+                    <tr>
+                      <td>Январь 2020</td>
+                      <td>207 000, 12344</td>
+                      <td>888345</td>
+                      <td>207 000, 12344</td>
+                      <td>4538.94</td>
+                      <td>4538.94</td>
+                      <td>133</td>
+                      <td>2334</td>
+                      <td>2334</td>
+                      <td>207 000,12344</td>
+                    </tr>
+                    <tr>
+                      <td>Январь 2020</td>
+                      <td>207 000, 12344</td>
+                      <td>888345</td>
+                      <td>207 000, 12344</td>
+                      <td>4538.94</td>
+                      <td>4538.94</td>
+                      <td>133</td>
+                      <td>2334</td>
+                      <td>2334</td>
+                      <td>207 000,12344</td>
+                    </tr>
+                    <tr>
+                      <td>Январь 2020</td>
+                      <td>207 000, 12344</td>
+                      <td>888345</td>
+                      <td>207 000, 12344</td>
+                      <td>4538.94</td>
+                      <td>4538.94</td>
+                      <td>133</td>
+                      <td>2334</td>
+                      <td>2334</td>
+                      <td>207 000,12344</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="modal_calend">
+            <a class="close_clnd" href="#"></a>
+            <div class="modal_calend_inner">
+              <div class="modal_calend_left">
+                <div class="month_left">
+                  <span class="mo_left_name"> <span class="mo_left"></span> Январь</span>
+                </div>
+                <table>
+                  <tr class="head_calend">
+                    <td>Пн</td>
+                    <td>Вт</td>
+                    <td>Ср</td>
+                    <td>Чт</td>
+                    <td>Пт</td>
+                    <td>Сб</td>
+                    <td>Вс</td>
+                  </tr>
+                  <tr class="body_calend">
+                    <td class="end_day"></td>
+                    <td class="end_day"></td>
+                    <td class="end_day"></td>
+                    <td class="end_day">1</td>
+                    <td class="end_day">2</td>
+                    <td class="month_day">3</td>
+                    <td class="current_day">4</td>
+                  </tr>
+                  <tr class="body_calend">
+                    <td class="month_day">5</td>
+                    <td class="month_day">6</td>
+                    <td class="month_day">7</td>
+                    <td class="month_day">8</td>
+                    <td class="month_day">9</td>
+                    <td class="month_day">10</td>
+                    <td class="month_day">11</td>
+                  </tr>
+                  <tr class="body_calend">
+                    <td class="month_day">12</td>
+                    <td class="month_day">13</td>
+                    <td class="month_day">14</td>
+                    <td class="month_day">15</td>
+                    <td class="month_day">16</td>
+                    <td class="month_day">17</td>
+                    <td class="month_day">18</td>
+                  </tr>
+                  <tr class="body_calend">
+                    <td class="month_day">19</td>
+                    <td class="month_day">20</td>
+                    <td class="month_day">21</td>
+                    <td class="month_day">22</td>
+                    <td class="month_day">23</td>
+                    <td class="month_day">24</td>
+                    <td class="month_day">25</td>
+                  </tr>
+                  <tr class="body_calend">
+                    <td class="month_day">26</td>
+                    <td class="month_day">27</td>
+                    <td class="month_day">28</td>
+                    <td class="month_day">29</td>
+                    <td class="month_day">30</td>
+                    <td class="month_day">31</td>
+                    <td class="end_day"></td>
+                  </tr>
+                </table>
+              </div>
+              <div class="modal_calend_right">
+                <div class="month_right">
+                  <span class="mo_left_name"> <span class="mo_right"></span>Февраль</span>
+                </div>
+                <table>
+                  <tr class="head_calend">
+                    <td>Пн</td>
+                    <td>Вт</td>
+                    <td>Ср</td>
+                    <td>Чт</td>
+                    <td>Пт</td>
+                    <td>Сб</td>
+                    <td>Вс</td>
+                  </tr>
+                  <tr class="body_calend">
+                    <td class="end_day"></td>
+                    <td class="end_day"></td>
+                    <td class="end_day"></td>
+                    <td class="end_day">1</td>
+                    <td class="end_day">2</td>
+                    <td class="month_day">3</td>
+                    <td class="current_day">4</td>
+                  </tr>
+                  <tr class="body_calend">
+                    <td class="month_day">5</td>
+                    <td class="month_day">6</td>
+                    <td class="month_day">7</td>
+                    <td class="month_day">8</td>
+                    <td class="month_day">9</td>
+                    <td class="month_day">10</td>
+                    <td class="month_day">11</td>
+                  </tr>
+                  <tr class="body_calend">
+                    <td class="month_day">12</td>
+                    <td class="month_day">13</td>
+                    <td class="month_day">14</td>
+                    <td class="month_day">15</td>
+                    <td class="month_day">16</td>
+                    <td class="month_day">17</td>
+                    <td class="month_day">18</td>
+                  </tr>
+                  <tr class="body_calend">
+                    <td class="month_day">19</td>
+                    <td class="month_day">20</td>
+                    <td class="month_day">21</td>
+                    <td class="month_day">22</td>
+                    <td class="month_day">23</td>
+                    <td class="month_day">24</td>
+                    <td class="month_day">25</td>
+                  </tr>
+                  <tr class="body_calend">
+                    <td class="month_day">26</td>
+                    <td class="month_day">27</td>
+                    <td class="month_day">28</td>
+                    <td class="month_day">29</td>
+                    <td class="month_day">30</td>
+                    <td class="month_day">31</td>
+                    <td class="end_day"></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer_line">
+          <div class="title_line">
+            <div class="title_line_t filter">Фильтры</div>
+          </div>
+          <div class="modal_line">
+            <a href="#" class="closebig"></a>
+            <h3>Перевод средств другому челвовеку</h3>
+            <p style="margin: 25px 0">Перевести из резерва партнера: <span style="font-weight: bold; text-transform: uppercase">Михайлов Д.И.</span></p>
+            <div class="component_body">
+              <div class="line_param_input">
+                <div class="l_p">
+                  <div class="line_param">
+                    <div class="line_param_top">
+                      ЛО
+                    </div>
+                    <div class="line_param_bottom">
+                      0
+                    </div>
+                  </div>
+                  <div class="label_in">
+                    <input type="text" class="tinput" />
+                    <label class="tlabel">Партнер-получатель</label>
+                    <a href="#" class="line_param_down"></a>
+                  </div>
+                </div>
+                <div class="r_p">
+                  <div class="line_param">
+                    <div class="line_param_top">
+                      Резерв
+                    </div>
+                    <div class="line_param_bottom">
+                      100
+                    </div>
+                  </div>
+                  <div class="label_in">
+                    <input type="text" class="tinput" />
+                    <label class="tlabel">Количество к передаче</label>
+                  </div>
+                  <div class="nav_links">
+                    <a class="brd_green fill w50" href="#" style="float: right">Перевести</a>
+                  </div>
+                </div>
+                <div class="l_p l_p_adaptive">
+                  <div class="line_param">
+                    <div class="line_param_top">
+                      ЛО
+                    </div>
+                    <div class="line_param_bottom">
+                      0
+                    </div>
+                  </div>
+                  <div class="line_param">
+                    <div class="line_param_top">
+                      Резерв
+                    </div>
+                    <div class="line_param_bottom">
+                      100
+                    </div>
+                  </div>
+                  <div class="label_in">
+                    <input type="text" class="tinput" />
+                    <label class="tlabel">Партнер-получатель</label>
+                    <a href="#" class="line_param_down"></a>
+                  </div>
+                  <div class="label_in">
+                    <input type="text" class="tinput" />
+                    <label class="tlabel">Количество к передаче</label>
+                  </div>
+                  <div class="nav_links">
+                    <a class="brd_green fill w50" href="#" style="float: right">Перевести</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script type="text/javascript" src="js/new.js"></script>
+</body>
+</html>

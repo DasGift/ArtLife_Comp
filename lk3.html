@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="css/320.css" type="text/css" media="screen">
+</head>
+<body>
+<div class="fullWidth">
+  <div class="wrapper">
+    <div class="full_content">
+      <div class="overlay"></div>
+      <div class="left_menu active">
+        <div class="left_menu_top">
+          <div class="logo">
+            <a href="#">
+              <img src="images/logo_red.svg" alt="Артлайф" style="width: 52px" />
+              <img class="lhid" src="images/logo_1.png" alt="Артлайф"/>
+            </a>
+          </div>
+        </div>
+        <div class="nav active">
+          <ul>
+            <li>
+              <a href="#" class="nav_parent">
+                  <span class="ico">
+                    <img src="images/i1.svg" alt=""/>
+                  </span>
+                <span class="ico_t">Работа с сетью</span>
+              </a>
+              <ul class="sub_menu">
+                <li><a href="#">Карточка склада</a></li>
+                <li><a href="#">Иерархия дочерних складов</a></li>
+                <li><a href="#">Создание пользователей склада</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nav_parent">
+                  <span class="ico">
+                    <img src="images/i2.svg" alt=""/>
+                  </span>
+                <span class="ico_t">Лицевые счета</span>
+              </a>
+              <ul class="sub_menu">
+                <li><a href="#">Детализация по лицевому счёту склада</a></li>
+                <li><a href="#">Детализация по лицевому счёту партнёра</a></li>
+                <li><a href="#">Движение Денежных Средств по складу</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nav_parent">
+                  <span class="ico">
+                    <img src="images/i3.svg" alt=""/>
+                  </span>
+                <span class="ico_t">Маркетинг план</span>
+              </a>
+              <ul class="sub_menu">
+                <li><a href="#">Все товарные документы</a></li>
+                <li><a href="#">Складские обороты</a></li>
+                <li><a href="#">Каталог/ складские остатки</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nav_parent">
+                  <span class="ico">
+                    <img src="images/i4.svg" alt=""/>
+                  </span>
+                <span class="ico_t">Управление</span>
+              </a>
+              <ul class="sub_menu">
+                <li><a href="#">Партнёры</a></li>
+                <li><a href="#">Регистрация партнёра</a></li>
+                <li><a href="#">Карточка партнёра</a></li>
+                <li><a href="#">История организации по периодам*</a></li>
+                <li><a href="#">История показателей партнёра по периодам *</a></li>
+                <li><a href="#">История бонусов (КЕ) *</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header">
+        <div class="acc_b">
+          <div class="acc_b_menu">
+            <img src="images/burger-menu.svg" alt="">
+          </div>
+          <div class="acc_n">
+            <div class="acc_n_text">Компания</div>
+            <div class="acc_n_ico">
+              <img src="images/avatar.svg" alt=""/>
+            </div>
+            <div class="acc_nav">
+              <ul>
+                <li><a href="#">Название склада</a></li>
+                <li><a href="#"><span>Статус</span>Директор</a></li>
+                <li class="logout"><a href="#">Выйти</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="c_head">
+          <h1>Переход в дистрибьюторы</h1>
+        </div>
+        <div class="component">
+          <div class="component_body">
+            <div class="l_p">
+              <div class="line_param_input">
+                <label style="font-size: 12px; color: #9A9A9A;">Период от и до</label>
+                <input type="text" placeholder="01.04.2020 - 09.09.2020"/>
+                <span class="calendar"></span>
+              </div>
+            </div>
+            <div class="r_p">
+              <div class="nav_links" style="margin-top: 15px">
+                <a class="brd_green fill w50 add_partner" href="#" style="margin-top: 0; float: left">Перевести в дистрибьюторы</a>
+              </div>
+            </div>
+          </div>
+          <div class="component_body" style="margin-top: 20px">
+            <div class="middle_part">
+              <div>
+                <table class="otch_p bordered">
+                  <thead>
+                    <tr class="head_t">
+                      <th style="width: 9%; padding-right: 25px; background: #32AAA7; color: #FFFFFF;">
+                        <div>
+                          <div class="check_block" style="margin: 0 20px 0 0">
+                            <input type="checkbox" class="line_param_checkbox" id="table_top" checked>
+                            <label class="line_param_label_table_top" for="table_top"></label>
+                          </div>
+                        </div>
+                        <div style="width: 50%; float: left">
+                          <span>Выделить все</span>
+                        </div>
+                      </th>
+                      <th style="padding-right: 25px">
+                        <div>
+                          <span>Дата заявки</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                      <th style="padding-right: 25px">
+                        <div>
+                          <span>Номер</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                      <th style="padding-right: 25px">
+                        <div>
+                          <span>ФИО</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                      <th style="padding-right: 25px">
+                        <div>
+                          <span>Страна</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                      <th style="padding-right: 25px">
+                        <div>
+                          <span>Город</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                      <th style="padding-right: 25px">
+                        <div>
+                          <span>Дата рождения</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                      <th style="padding-right: 25px">
+                        <div>
+                          <span>Телефон</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                      <th style="padding-right: 25px">
+                        <div>
+                          <span>Почта</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                      <th style="padding-right: 25px">
+                        <div>
+                          <span>Дата регистрации</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                      <th style="padding-right: 25px">
+                        <div>
+                          <span>Комментарий спонсора</span>
+                        </div>
+                        <div class="table_array">
+                          <img src="./images/array-drop-top.svg" alt="Сортировка" class="table_array_top">
+                          <img src="./images/array-drop-down.svg" alt="Сортировка" class="table_array_bottom">
+                        </div>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="line_param">
+                          <div class="check_block" style="width: 100%; margin-left: 0">
+                            <input type="checkbox" class="line_param_checkbox" id="table" checked>
+                            <label class="line_param_label_table" for="table"></label>
+                          </div>
+                        </div>
+                      </td>
+                      <td>21.09.20</td>
+                      <td>3567990</td>
+                      <td>Джандильдинов ТИМУР АХМЕТОВИЧ</td>
+                      <td>Россия</td>
+                      <td>Название города</td>
+                      <td>30.11.19</td>
+                      <td>24-52-76</td>
+                      <td>авыа@fds.tu</td>
+                      <td>23.06.17</td>
+                      <td>Заберите у меня 50 баллов</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="line_param">
+                          <div class="check_block" style="width: 100%; margin-left: 0">
+                            <input type="checkbox" class="line_param_checkbox" id="table1" checked>
+                            <label class="line_param_label_table" for="table1"></label>
+                          </div>
+                        </div>
+                      </td>
+                      <td>21.09.20</td>
+                      <td>3567990</td>
+                      <td>Джандильдинов ТИМУР АХМЕТОВИЧ</td>
+                      <td>Россия</td>
+                      <td>Название города</td>
+                      <td>30.11.19</td>
+                      <td>24-52-76</td>
+                      <td>авыа@fds.tu</td>
+                      <td>23.06.17</td>
+                      <td>Заберите у меня 50 баллов</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="line_param">
+                          <div class="check_block" style="width: 100%; margin-left: 0">
+                            <input type="checkbox" class="line_param_checkbox" id="table3" checked>
+                            <label class="line_param_label_table" for="table3"></label>
+                          </div>
+                        </div>
+                      </td>
+                      <td>21.09.20</td>
+                      <td>3567990</td>
+                      <td>Джандильдинов ТИМУР АХМЕТОВИЧ</td>
+                      <td>Россия</td>
+                      <td>Название города</td>
+                      <td>30.11.19</td>
+                      <td>24-52-76</td>
+                      <td>авыа@fds.tu</td>
+                      <td>23.06.17</td>
+                      <td>Заберите у меня 50 баллов</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="line_param">
+                          <div class="check_block" style="width: 100%; margin-left: 0">
+                            <input type="checkbox" class="line_param_checkbox" id="table2" checked>
+                            <label class="line_param_label_table" for="table2"></label>
+                          </div>
+                        </div>
+                      </td>
+                      <td>21.09.20</td>
+                      <td>3567990</td>
+                      <td>Джандильдинов ТИМУР АХМЕТОВИЧ</td>
+                      <td>Россия</td>
+                      <td>Название города</td>
+                      <td>30.11.19</td>
+                      <td>24-52-76</td>
+                      <td>авыа@fds.tu</td>
+                      <td>23.06.17</td>
+                      <td>Заберите у меня 50 баллов</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="modal_calend">
+            <a class="close_clnd" href="#"></a>
+            <div class="modal_calend_inner">
+              <div class="modal_calend_left">
+                <div class="month_left">
+                  <span class="mo_left_name"> <span class="mo_left"></span> Январь</span>
+                </div>
+                <table>
+                  <tr class="head_calend">
+                    <td>Пн</td>
+                    <td>Вт</td>
+                    <td>Ср</td>
+                    <td>Чт</td>
+                    <td>Пт</td>
+                    <td>Сб</td>
+                    <td>Вс</td>
+                  </tr>
+                  <tr class="body_calend">
+                    <td class="end_day"></td>
+                    <td class="end_day"></td>
+                    <td class="end_day"></td>
+                    <td class="end_day">1</td>
+                    <td class="end_day">2</td>
+                    <td class="month_day">3</td>
+                    <td class="current_day">4</td>
+                  </tr>
+                  <tr class="body_calend">
+                    <td class="month_day">5</td>
+                    <td class="month_day">6</td>
+                    <td class="month_day">7</td>
+                    <td class="month_day">8</td>
+                    <td class="month_day">9</td>
+                    <td class="month_day">10</td>
+                    <td class="month_day">11</td>
+                  </tr>
+                  <tr class="body_calend">
+                    <td class="month_day">12</td>
+                    <td class="month_day">13</td>
+                    <td class="month_day">14</td>
+                    <td class="month_day">15</td>
+                    <td class="month_day">16</td>
+                    <td class="month_day">17</td>
+                    <td class="month_day">18</td>
+                  </tr>
+                  <tr class="body_calend">
+                    <td class="month_day">19</td>
+                    <td class="month_day">20</td>
+                    <td class="month_day">21</td>
+                    <td class="month_day">22</td>
+                    <td class="month_day">23</td>
+                    <td class="month_day">24</td>
+                    <td class="month_day">25</td>
+                  </tr>
+                  <tr class="body_calend">
+                    <td class="month_day">26</td>
+                    <td class="month_day">27</td>
+                    <td class="month_day">28</td>
+                    <td class="month_day">29</td>
+                    <td class="month_day">30</td>
+                    <td class="month_day">31</td>
+                    <td class="end_day"></td>
+                  </tr>
+                </table>
+              </div>
+              <div class="modal_calend_right">
+                <div class="month_right">
+                  <span class="mo_left_name"> <span class="mo_right"></span>Февраль</span>
+                </div>
+                <table>
+                  <tr class="head_calend">
+                    <td>Пн</td>
+                    <td>Вт</td>
+                    <td>Ср</td>
+                    <td>Чт</td>
+                    <td>Пт</td>
+                    <td>Сб</td>
+                    <td>Вс</td>
+                  </tr>
+                  <tr class="body_calend">
+                    <td class="end_day"></td>
+                    <td class="end_day"></td>
+                    <td class="end_day"></td>
+                    <td class="end_day">1</td>
+                    <td class="end_day">2</td>
+                    <td class="month_day">3</td>
+                    <td class="current_day">4</td>
+                  </tr>
+                  <tr class="body_calend">
+                    <td class="month_day">5</td>
+                    <td class="month_day">6</td>
+                    <td class="month_day">7</td>
+                    <td class="month_day">8</td>
+                    <td class="month_day">9</td>
+                    <td class="month_day">10</td>
+                    <td class="month_day">11</td>
+                  </tr>
+                  <tr class="body_calend">
+                    <td class="month_day">12</td>
+                    <td class="month_day">13</td>
+                    <td class="month_day">14</td>
+                    <td class="month_day">15</td>
+                    <td class="month_day">16</td>
+                    <td class="month_day">17</td>
+                    <td class="month_day">18</td>
+                  </tr>
+                  <tr class="body_calend">
+                    <td class="month_day">19</td>
+                    <td class="month_day">20</td>
+                    <td class="month_day">21</td>
+                    <td class="month_day">22</td>
+                    <td class="month_day">23</td>
+                    <td class="month_day">24</td>
+                    <td class="month_day">25</td>
+                  </tr>
+                  <tr class="body_calend">
+                    <td class="month_day">26</td>
+                    <td class="month_day">27</td>
+                    <td class="month_day">28</td>
+                    <td class="month_day">29</td>
+                    <td class="month_day">30</td>
+                    <td class="month_day">31</td>
+                    <td class="end_day"></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer_line">
+          <div class="title_line">
+            <div class="title_line_t filter">Фильтры</div>
+          </div>
+          <div class="modal_line">
+            <a href="#" class="closebig"></a>
+            <h3>Фильтры</h3>
+            <div class="component_body">
+              <div class="line_param_input">
+                <div class="l_p">
+                  <div class="label_in">
+                    <input type="text" class="tinput" />
+                    <label class="tlabel">Логин</label>
+                  </div>
+                  <div class="label_in">
+                    <input type="text" class="tinput" />
+                    <label class="tlabel">Телефон</label>
+                  </div>
+                </div>
+                <div class="r_p">
+                  <div class="label_in">
+                    <input type="text" class="tinput" />
+                    <label class="tlabel">Имя</label>
+                  </div>
+                  <div class="label_in">
+                    <input type="text" class="tinput" />
+                    <label class="tlabel">E-mail</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="component_body">
+              <div class="r_p" style="float: right">
+                <div class="nav_links">
+                  <a class="brd_green fill w50" href="#">Показать</a>
+                  <a class="brd_green w50 last" href="#" style="margin-right: 0">Сбросить</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script type="text/javascript" src="js/new.js"></script>
+</body>
+</html>
