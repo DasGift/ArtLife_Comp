@@ -56,6 +56,13 @@ $(document).ready(function(){
 
     $('.modal_line .closebig').click(function(){
         $('.modal_line').css({'display': 'none'});
+        $('.footer_line').css({'display': 'block'});
+        $('.title_line').css({'display': 'block'});
+    });
+
+    $('.title_line').click(function(){
+        $('.modal_line').css({'display': 'block'});
+        $(this).css({'display': 'none'});
     });
 
     $('.closebig').click(function(){

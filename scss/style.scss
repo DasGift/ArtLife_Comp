@@ -535,13 +535,13 @@ input[type="text"] {
       display: none;
     }
 
-    &:hover .modal_line {
-      display: block;
-    }
-
-    &:hover .title_line {
-      display: none;
-    }
+    //&:hover .modal_line {
+    //  display: block;
+    //}
+    //
+    //&:hover .title_line {
+    //  display: none;
+    //}
   }
 
   .title_line {
@@ -1220,10 +1220,11 @@ table.bordered tr td {
 .modal_view,
 .modal_sale {
   display: none;
-  position: absolute;
+  position: fixed;
   width: 100%;
   background: #fff;
   left: 0;
+  bottom: 0;
   padding: 40px;
   box-sizing: border-box;
   box-shadow: 0 4px 12px 2px rgba(0, 0, 0, 0.24);
