@@ -142,10 +142,10 @@ input[type=text] {
 .left_menu:hover .nav {
   text-align: left;
 }
-.left_menu:hover .nav ul li a {
+.left_menu:hover .nav ul li a:not(.active) {
   background: url(../images/array_down.png) no-repeat 100% center;
 }
-.left_menu:hover .nav ul li:hover a {
+.left_menu:hover .nav ul li a.active {
   background: url(../images/array_top.png) no-repeat 100% center;
   color: #383A41;
 }
@@ -444,8 +444,11 @@ input[type=text] {
 
 .more,
 .open,
+.open_dop,
+.open_lic,
 .hidden,
-.hidden_action {
+.hidden_action,
+.hidden_lic {
   line-height: 16px;
   color: #32AAA7;
   border-bottom: 1px dotted;
@@ -464,11 +467,13 @@ input[type=text] {
   margin-right: 25px;
 }
 
-.hidden_component {
+.hidden_component,
+.hidden_component_lic {
   display: none;
 }
 
-.hidden_component.active {
+.hidden_component.active,
+.hidden_component_lic.active {
   display: block;
 }
 

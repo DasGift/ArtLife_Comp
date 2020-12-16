@@ -84,12 +84,20 @@ $(document).ready(function(){
         }
     });
 
-    $('a.open').click(function(){
+    $('a.open_dop').click(function(){
         $('.hidden_component').addClass('active');
+    });
+
+    $('a.open_lic').click(function(){
+        $('.hidden_component_lic').addClass('active');
     });
 
     $('a.hidden').click(function(){
         $('.hidden_component').removeClass('active');
+    });
+
+    $('a.hidden_lic').click(function(){
+        $('.hidden_component_lic').removeClass('active');
     });
 
     $('.mailslog').click(function(){
