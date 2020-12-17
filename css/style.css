@@ -38,6 +38,10 @@ body {
   font-size: 14px;
 }
 
+.overlay {
+  display: none;
+}
+
 h1 {
   font-style: normal;
   font-weight: 500;
@@ -213,10 +217,6 @@ input[type=text] {
 }
 
 .l_p_adaptive {
-  display: none;
-}
-
-.overlay {
   display: none;
 }
 

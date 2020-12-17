@@ -27,6 +27,10 @@ body {
   font-size: 14px;
 }
 
+.overlay {
+  display: none;
+}
+
 h1 {
   font-style: normal;
   font-weight: 500;
@@ -217,10 +221,6 @@ input[type="text"] {
           background: #EBEEFA;
           color:#383A41;
         }
-
-        //.sub_menu {
-        //  display: block;
-        //}
       }
     }
   }
@@ -234,9 +234,7 @@ input[type="text"] {
   display: none;
 }
 
-.overlay {
-  display: none;
-}
+//Подменю
 
 .sub_menu {
   display: none;
@@ -366,6 +364,8 @@ input[type="text"] {
   margin-right: 0 !important;
 }
 
+
+//Блоки для инпутов
 .line_param_input {
   position: relative;
   width: 100%;
@@ -390,6 +390,7 @@ input[type="text"] {
   margin-right:30px;
 }
 
+//Блоки для тегов
 .tags {
   position: relative;
   float: left;
@@ -411,6 +412,7 @@ input[type="text"] {
   }
 }
 
+//Кнопка закрытия
 .closes {
   position: absolute;
   display: block;
@@ -422,6 +424,7 @@ input[type="text"] {
   top: 7px;
 }
 
+//Аватарка юзера
 .user_avatar {
   width: 55px;
   height: 55px;
@@ -431,6 +434,7 @@ input[type="text"] {
   margin-right: 15px;
 }
 
+//Левая и правая части в основном контента
 .l_p {
   width: 50%;
   float: left;
@@ -445,6 +449,7 @@ input[type="text"] {
   box-sizing: border-box;
 }
 
+//Тоже блоки для инпутов
 .line_param {
   position: relative;
   width: 100%;
@@ -485,6 +490,7 @@ input[type="text"] {
   }
 }
 
+//Ссылки
 .more,
 .open,
 .open_dop,
@@ -506,6 +512,7 @@ input[type="text"] {
   color: #32AAA7;
 }
 
+//Скрываемые блоки в карточке парнтнера
 .hidden_action {
   margin-right: 25px;
 }
@@ -520,6 +527,7 @@ input[type="text"] {
   display: block;
 }
 
+//Футер
 .footer {
   position: fixed;
   width: 100%;
@@ -551,14 +559,6 @@ input[type="text"] {
     .modal_line {
       display: none;
     }
-
-    //&:hover .modal_line {
-    //  display: block;
-    //}
-    //
-    //&:hover .title_line {
-    //  display: none;
-    //}
   }
 
   .title_line {
@@ -610,6 +610,7 @@ input[type="text"] {
   }
 }
 
+//Модалка в футере
 .modal_line {
   position: relative;
   width: 100%;
@@ -678,6 +679,7 @@ input[type="text"] {
   }
 }
 
+//Блок для таблиц и сама таблица
 .middle_part {
   width: 100%;
   float: left;
@@ -773,6 +775,7 @@ table.bordered tr td {
   border-bottom: none;
 }
 
+//Многострочные столбцы
 .lin_t_top {
   width: 100%;
   float: left;
@@ -832,6 +835,7 @@ table.bordered tr td {
   display: block;
 }
 
+//Кнопка закрытия большая
 .closebig {
   display: block;
   position: absolute;
@@ -857,6 +861,7 @@ table.bordered tr td {
   }
 }
 
+//Радиобаттоны
 .radio {
   float: left;
   margin-right: 20px;
@@ -915,6 +920,7 @@ table.bordered tr td {
   background-color: #e9ecef;
 }
 
+//Блоки для инпутов
 .label_in {
   position: relative;
   padding: 27px 0;
@@ -975,6 +981,7 @@ table.bordered tr td {
   }
 }
 
+//Календарь
 .month_select {
   width: 100%;
   float: left;
@@ -1026,6 +1033,7 @@ table.bordered tr td {
   bottom: 5px;
 }
 
+//Модалка с календарем
 .modal_calend {
   display: none;
   position: absolute;
@@ -1159,6 +1167,7 @@ table.bordered tr td {
   background: url(../images/clocalend.svg) no-repeat center;
 }
 
+//Кнопки
 .nav_links {
   margin-top: 30px;
 }
@@ -1232,6 +1241,7 @@ table.bordered tr td {
   padding-bottom: 0;
 }
 
+//Модалки
 .modal_partner,
 .modal_send,
 .modal_view,
@@ -1309,6 +1319,7 @@ table.bordered tr td {
   padding: 5px 0;
 }
 
+//Чекбоксы
 .line_param_checkbox {
   display: none;
 }
@@ -1382,6 +1393,7 @@ table.bordered tr td {
   background-size: auto;
 }
 
+//Аккаунт
 .acc_nav {
   z-index: 99999;
 }
@@ -1432,6 +1444,7 @@ table.bordered tr td {
   color: #9A9A9A;
 }
 
+//Стили для адаптива
 .component_head_cart {
   width: 100%;
   padding: 24px 16px;
@@ -1518,6 +1531,7 @@ table.bordered tr td {
   }
 }
 
+//Редактирование инпутов
 .input_edit {
   width: 100%;
   background: #F3F6FF;
@@ -1568,6 +1582,7 @@ table.bordered tr td {
   margin-bottom: 36px;
 }
 
+//Блок для табов
 .tabs_block {
   border-bottom: 1px solid #C4C4C4;;
 
@@ -1611,6 +1626,7 @@ table.bordered tr td {
   margin-top: 15px;
 }
 
+//Блок для иконок с геолоколациец и прочими функциями
 .geo_block {
   position: relative;
   float: right; 
@@ -1659,6 +1675,7 @@ table.bordered tr td {
   }
 }
 
+//Скролл
 ::-webkit-scrollbar {
   width: 1px;
   height: 1px;
