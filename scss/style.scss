@@ -26,6 +26,43 @@ body {
   font-size: 14px;
 }
 
+.tooltip_block {
+  position: relative;
+  float: left;
+  top: 70px;
+  left: 100px;
+
+  &_hover {
+    position: absolute;
+    width: 130px;
+    top: -55px;
+    right: -10px;
+    background: #E6F4F4;
+    padding: 8px 16px;
+    font-family: FuturaPT-Book;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 12px;
+    text-align: center;
+    color: #383A41;
+    border-radius: 1px;
+  }
+
+  .triangle_structure {
+    background: #E6F4F4;
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: -19px;
+      bottom: 4px;
+      border: 10px solid transparent;
+      border-right: 10px solid #E6F4F4;
+    }
+  }
+}
+
 .overlay {
   display: none;
 }
