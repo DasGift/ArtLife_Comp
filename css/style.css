@@ -285,7 +285,7 @@ input[type=text] {
   width: 100%;
   max-width: 1920px;
   float: left;
-  padding: 40px 40px 0 120px;
+  padding: 40px 40px 100px 120px;
   box-sizing: border-box;
 }
 
@@ -888,6 +888,7 @@ table.bordered tr td {
 
 .tlabel {
   position: absolute;
+  top: 18px;
   transition: 0.15s ease-in-out;
   color: #a0a0a6;
   pointer-events: none;
@@ -1176,22 +1177,28 @@ table.bordered tr td {
 .modal_partner,
 .modal_send,
 .modal_view,
-.modal_sale {
+.modal_sale,
+.modal_add_cat,
+.modal_transfer {
   display: none;
   position: fixed;
-  width: 100%;
+  width: 93%;
+  height: auto;
   background: #fff;
-  left: 0;
+  left: 100px;
   bottom: 0;
   padding: 40px;
   box-sizing: border-box;
   box-shadow: 0 4px 12px 2px rgba(0, 0, 0, 0.24);
-  z-index: 12;
+  z-index: 15;
+  overflow-y: scroll;
 }
 .modal_partner .line_param_down,
 .modal_send .line_param_down,
 .modal_view .line_param_down,
-.modal_sale .line_param_down {
+.modal_sale .line_param_down,
+.modal_add_cat .line_param_down,
+.modal_transfer .line_param_down {
   position: absolute;
   width: 24px;
   height: 24px;
@@ -1434,6 +1441,39 @@ table.bordered tr td {
   box-sizing: border-box;
   border-radius: 1px;
 }
+.line_param_cart .cart_title {
+  font-family: FuturaPT-Demi;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 12px;
+  color: #383A41;
+  font-weight: bold;
+}
+
+.cat_edit {
+  background: #F3F6FF;
+  box-sizing: border-box;
+  padding: 6px 16px;
+}
+.cat_edit .input_edit_title {
+  font-family: FuturaPT-Book;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  color: #9A9A9A;
+}
+.cat_edit .input_edit {
+  font-family: FuturaPT-Book;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #383A41;
+}
+.cat_edit .r_p_cart {
+  margin-top: 15px;
+}
 
 .l_p_cart,
 .c_p_cart {
@@ -1580,6 +1620,9 @@ table.bordered tr td {
   bottom: -20px;
   border: 10px solid transparent;
   border-top: 10px solid #E5E5E5;
+}
+.geo_block img {
+  cursor: pointer;
 }
 
 ::-webkit-scrollbar {

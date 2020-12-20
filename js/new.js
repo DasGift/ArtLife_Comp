@@ -42,6 +42,10 @@ $(document).ready(function(){
         $('.modal_view').css({'display': 'block'});
     });
 
+    $('.create_cat').click(function(){
+        $('.modal_add_cat').css({'display': 'block'});
+    });
+
     $('.add_partner').click(function(){
         $('.modal_partner').css({'display': 'block'});
     });
@@ -52,6 +56,10 @@ $(document).ready(function(){
 
     $('.send_points').click(function(){
         $('.modal_send').css({'display': 'block'});
+    });
+
+    $('.open_transfer').click(function(){
+        $('.modal_transfer').css({'display': 'block'});
     });
 
     $('.modal_line .closebig').click(function(){
@@ -70,6 +78,8 @@ $(document).ready(function(){
         $('.modal_send').css({'display': 'none'});
         $('.modal_view').css({'display': 'none'});
         $('.modal_sale').css({'display': 'none'});
+        $('.modal_add_cat').css({'display': 'none'});
+        $('.modal_transfer').css({'display': 'none'});
     });
 
     $('a.more').click(function(){
