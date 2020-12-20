@@ -548,6 +548,23 @@ input[type="text"] {
   color: #32AAA7;
 }
 
+.middle_part table a.lt3_link_white,
+.middle_part table a.lt3_link_green {
+  font-family: FuturaPT-Demi;
+  float: right;
+  border-bottom-style: solid;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  margin-top: 5px;
+}
+
+.middle_part table a.lt3_link_green {
+  color: #037B78;
+}
+
 //Скрываемые блоки в карточке парнтнера
 .hidden_action {
   margin-right: 25px;
