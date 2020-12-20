@@ -50,8 +50,8 @@ $(document).ready(function(){
         $('.modal_partner').css({'display': 'block'});
     });
 
-    $('.add_sale').click(function(){
-        $('.modal_sale').css({'display': 'block'});
+    $('.add_group').click(function(){
+        $('.modal_group').css({'display': 'block'});
     });
 
     $('.send_points').click(function(){
@@ -77,7 +77,7 @@ $(document).ready(function(){
         $('.modal_partner').css({'display': 'none'});
         $('.modal_send').css({'display': 'none'});
         $('.modal_view').css({'display': 'none'});
-        $('.modal_sale').css({'display': 'none'});
+        $('.modal_group').css({'display': 'none'});
         $('.modal_add_cat').css({'display': 'none'});
         $('.modal_transfer').css({'display': 'none'});
     });
