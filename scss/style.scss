@@ -26,43 +26,6 @@ body {
   font-size: 14px;
 }
 
-.tooltip_block {
-  position: relative;
-  float: left;
-  top: 70px;
-  left: 100px;
-
-  &_hover {
-    position: absolute;
-    width: 130px;
-    top: -55px;
-    right: -10px;
-    background: #E6F4F4;
-    padding: 8px 16px;
-    font-family: FuturaPT-Book;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 12px;
-    text-align: center;
-    color: #383A41;
-    border-radius: 1px;
-  }
-
-  .triangle_structure {
-    background: #E6F4F4;
-
-    &:after {
-      content: '';
-      position: absolute;
-      left: -19px;
-      bottom: 4px;
-      border: 10px solid transparent;
-      border-right: 10px solid #E6F4F4;
-    }
-  }
-}
-
 .overlay {
   display: none;
 }
@@ -1741,12 +1704,13 @@ table.bordered tr td {
 }
 
 //Блок для иконок с геолоколациец и прочими функциями
-.geo_block {
+.tooltip_block {
   position: relative;
   float: right; 
   margin-top: 10px;
 
   &_hover {
+    display: none;
     position: absolute;
     width: 130px;
     top: -55px;
@@ -1790,6 +1754,79 @@ table.bordered tr td {
 
   img {
     cursor: pointer;
+  }
+}
+
+.icon_link_block {
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+
+  &:hover .tooltip_block_hover{
+    display: block;
+  }
+}
+
+.icon_link {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.icon_search {
+  background-image: url("../images/search_unactive.svg");
+
+  &:hover {
+    background-image: url("../images/search_active.svg");
+  }
+}
+
+.icon_structure {
+  background-image: url("../images/icon_structure_unactive.svg");
+
+  &:hover {
+    background-image: url("../images/icon_structure_active.svg");
+  }
+}
+
+.icon_open {
+  background-image: url("../images/icon_open_unactive.svg");
+
+  &:hover {
+    background-image: url("../images/icon_open_active.svg");
+  }
+}
+
+.icon_close {
+  background-image: url("../images/icon_close_unactive.svg");
+
+  &:hover {
+    background-image: url("../images/icon_close_active.svg");
+  }
+}
+
+.icon_transfer {
+  background-image: url("../images/icon_transfer_unactive.svg");
+
+  &:hover {
+    background-image: url("../images/icon_transfer_active.svg");
+  }
+}
+
+.icon_input {
+  background-image: url("../images/icon_input_unactive.svg");
+
+  &:hover {
+    background-image: url("../images/icon_input_active.svg");
+  }
+}
+
+.icon_withdraw {
+  background-image: url("../images/icon_withdraw_unactive.svg");
+
+  &:hover {
+    background-image: url("../images/icon_withdraw_active.svg");
   }
 }
 

@@ -37,40 +37,6 @@ body {
   font-size: 14px;
 }
 
-.tooltip_block {
-  position: relative;
-  float: left;
-  top: 70px;
-  left: 100px;
-}
-.tooltip_block_hover {
-  position: absolute;
-  width: 130px;
-  top: -55px;
-  right: -10px;
-  background: #E6F4F4;
-  padding: 8px 16px;
-  font-family: FuturaPT-Book;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 12px;
-  text-align: center;
-  color: #383A41;
-  border-radius: 1px;
-}
-.tooltip_block .triangle_structure {
-  background: #E6F4F4;
-}
-.tooltip_block .triangle_structure:after {
-  content: "";
-  position: absolute;
-  left: -19px;
-  bottom: 4px;
-  border: 10px solid transparent;
-  border-right: 10px solid #E6F4F4;
-}
-
 .overlay {
   display: none;
 }
@@ -1617,12 +1583,13 @@ table.bordered tr td {
   margin-top: 15px;
 }
 
-.geo_block {
+.tooltip_block {
   position: relative;
   float: right;
   margin-top: 10px;
 }
-.geo_block_hover {
+.tooltip_block_hover {
+  display: none;
   position: absolute;
   width: 130px;
   top: -55px;
@@ -1637,10 +1604,10 @@ table.bordered tr td {
   text-align: center;
   color: #383A41;
 }
-.geo_block .triangle {
+.tooltip_block .triangle {
   background: #E5E5E5;
 }
-.geo_block .triangle:after {
+.tooltip_block .triangle:after {
   content: "";
   position: absolute;
   left: 75px;
@@ -1648,10 +1615,10 @@ table.bordered tr td {
   border: 10px solid transparent;
   border-top: 10px solid #E5E5E5;
 }
-.geo_block .triangle_structure {
+.tooltip_block .triangle_structure {
   background: #E5E5E5;
 }
-.geo_block .triangle_structure:after {
+.tooltip_block .triangle_structure:after {
   content: "";
   position: absolute;
   right: 20px;
@@ -1659,6 +1626,71 @@ table.bordered tr td {
   border: 10px solid transparent;
   border-top: 10px solid #E5E5E5;
 }
-.geo_block img {
+.tooltip_block img {
   cursor: pointer;
+}
+
+.icon_link_block {
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+}
+.icon_link_block:hover .tooltip_block_hover {
+  display: block;
+}
+
+.icon_link {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.icon_search {
+  background-image: url("../images/search_unactive.svg");
+}
+.icon_search:hover {
+  background-image: url("../images/search_active.svg");
+}
+
+.icon_structure {
+  background-image: url("../images/icon_structure_unactive.svg");
+}
+.icon_structure:hover {
+  background-image: url("../images/icon_structure_active.svg");
+}
+
+.icon_open {
+  background-image: url("../images/icon_open_unactive.svg");
+}
+.icon_open:hover {
+  background-image: url("../images/icon_open_active.svg");
+}
+
+.icon_close {
+  background-image: url("../images/icon_close_unactive.svg");
+}
+.icon_close:hover {
+  background-image: url("../images/icon_close_active.svg");
+}
+
+.icon_transfer {
+  background-image: url("../images/icon_transfer_unactive.svg");
+}
+.icon_transfer:hover {
+  background-image: url("../images/icon_transfer_active.svg");
+}
+
+.icon_input {
+  background-image: url("../images/icon_input_unactive.svg");
+}
+.icon_input:hover {
+  background-image: url("../images/icon_input_active.svg");
+}
+
+.icon_withdraw {
+  background-image: url("../images/icon_withdraw_unactive.svg");
+}
+.icon_withdraw:hover {
+  background-image: url("../images/icon_withdraw_active.svg");
 }
