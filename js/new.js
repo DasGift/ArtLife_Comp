@@ -58,6 +58,10 @@ $(document).ready(function(){
         $('.modal_send').css({'display': 'block'});
     });
 
+    $('.add_sale').click(function(){
+        $('.modal_sale').css({'display': 'block'});
+    });
+
     $('.open_transfer').click(function(){
         $('.modal_transfer').css({'display': 'block'});
     });
@@ -80,6 +84,7 @@ $(document).ready(function(){
         $('.modal_group').css({'display': 'none'});
         $('.modal_add_cat').css({'display': 'none'});
         $('.modal_transfer').css({'display': 'none'});
+        $('.modal_sale').css({'display': 'none'});
     });
 
     $('a.more').click(function(){

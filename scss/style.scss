@@ -369,7 +369,7 @@ input[type="text"] {
   &_action {
     span {
       float: left;
-      font-family: Futura PT;
+      font-family: FuturaPT-Demi;
       font-style: normal;
       font-weight: 500;
       font-size: 12px;
@@ -445,6 +445,12 @@ input[type="text"] {
 
   &_title {
     text-transform: uppercase;
+    font-family: FuturaPT-Demi;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    color: #383A41;
   }
 }
 
@@ -559,6 +565,18 @@ input[type="text"] {
   font-size: 12px;
   line-height: 12px;
   margin-top: 5px;
+}
+
+.middle_part table a.lt3_link_account {
+  font-family: FuturaPT-Book;
+}
+
+.middle_part table tr td.lt3_link_onaccount {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ED1A2E;
 }
 
 .middle_part table a.lt3_link_green {
@@ -835,7 +853,7 @@ table.bordered tr td {
   float: left;
 
   a {
-    font-family: Futura PT;
+    font-family: FuturaPT-Demi;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
