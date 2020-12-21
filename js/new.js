@@ -42,7 +42,7 @@ $(document).ready(function(){
         $('.modal_view').css({'display': 'block'});
     });
 
-    $('.create_cat').click(function(){
+    $('.icon_create').click(function(){
         $('.modal_add_cat').css({'display': 'block'});
     });
 

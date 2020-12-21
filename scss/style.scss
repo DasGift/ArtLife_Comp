@@ -1830,6 +1830,14 @@ table.bordered tr td {
   }
 }
 
+.icon_create {
+  background-image: url("../images/icon_create_unactive.svg");
+
+  &:hover {
+    background-image: url("../images/icon_create_active.svg");
+  }
+}
+
 //Скролл
 //::-webkit-scrollbar {
 //  width: 1px;

@@ -1694,3 +1694,10 @@ table.bordered tr td {
 .icon_withdraw:hover {
   background-image: url("../images/icon_withdraw_active.svg");
 }
+
+.icon_create {
+  background-image: url("../images/icon_create_unactive.svg");
+}
+.icon_create:hover {
+  background-image: url("../images/icon_create_active.svg");
+}
