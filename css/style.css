@@ -894,7 +894,7 @@ table.bordered tr td {
 
 .tlabel {
   position: absolute;
-  top: 18px;
+  top: 20px;
   transition: 0.15s ease-in-out;
   color: #a0a0a6;
   pointer-events: none;
@@ -919,7 +919,7 @@ table.bordered tr td {
 }
 .tinput:focus ~ label {
   font-size: 9px;
-  top: 25px;
+  top: 17px;
 }
 
 .month_select {
