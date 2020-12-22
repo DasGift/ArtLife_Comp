@@ -894,12 +894,13 @@ table.bordered tr td {
 
 .tlabel {
   position: absolute;
-  top: 20px;
+  top: 36px;
   transition: 0.15s ease-in-out;
   color: #a0a0a6;
   pointer-events: none;
   left: 0;
   font-family: FuturaPT-Book;
+  text-transform: uppercase;
 }
 
 .tinput {
@@ -917,9 +918,15 @@ table.bordered tr td {
 .tinput:focus {
   border-bottom: 1px solid #32AAA7;
 }
+
 .tinput:focus ~ label {
   font-size: 9px;
-  top: 17px;
+  top: 18px;
+}
+
+.tinput:valid ~ label {
+  font-size: 9px;
+  top: 18px;
 }
 
 .month_select {
