@@ -1299,7 +1299,6 @@ table.bordered tr td {
   display: none;
   position: fixed;
   width: 93%;
-  height: 100%;
   background: #fff;
   left: 100px;
   top: 20px;
@@ -1847,6 +1846,14 @@ table.bordered tr td {
 
   &:hover {
     background-image: url("../images/icon_create_active.svg");
+  }
+}
+
+.icon_geo {
+  background-image: url("../images/icon_geo_unactive.svg");
+
+  &:hover {
+    background-image: url("../images/icon_geo_active.svg");
   }
 }
 
