@@ -538,16 +538,69 @@ input[type="text"] {
   font-family: FuturaPT-Book;
 }
 
-.middle_part table tr td.lt3_link_onaccount {
+.middle_part table tr td.lt3_link_onaccount a {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   color: #ED1A2E;
+  text-decoration: underline;
 }
 
 .middle_part table a.lt3_link_green {
   color: #037B78;
+}
+
+.middle_part table tr.unactive-user {
+  background: #EBEBED;
+  border: 1px solid #C4C5C6;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  span,
+  td {
+    font-family: FuturaPT-Book;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #BABABA;
+  }
+
+  .restore-column {
+    position: relative;
+  }
+
+  .restore-user {
+    position: absolute;
+    width: max-content;
+    background: rgba(56, 58, 65, 0.64);
+    border-radius: 200px;
+    border: 1px solid #C4C5C6;
+    box-sizing: border-box;
+    padding: 2px 8px;
+    right: 0;
+    top: 15px;
+
+    span {
+      font-family: FuturaPT-Demi;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 10px;
+      line-height: 16px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+    }
+  }
+}
+
+.middle_part table tr.table-categhories {
+  td,
+  td:nth-child(1){
+    border-right: none;
+    background: #CEEBEA;
+  }
 }
 
 //Скрываемые блоки в карточке парнтнера
