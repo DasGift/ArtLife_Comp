@@ -529,30 +529,78 @@
           </div>
           <div class="modal_line">
             <a href="#" class="closebig"></a>
-            <h3>Фильтры</h3>
+            <h3>Поиск партнера</h3>
             <div class="component_body">
               <div class="line_param_input">
                 <div class="l_p">
-                  <div class="label_in">
-                    <input type="text" class="tinput" required />
-                    <label class="tlabel" for>Поиск партнера по номеру или ФИО</label>
-                    <span class="search"></span>
+                  <div class="sortblock">
+                    <div class="sortblock_param">
+                      <h5 style="margin: 25px 0">Выбор дерева</h5>
+                      <div class="radio">
+                        <input class="custom-radio" type="radio" id="param1" name="param" value="Полное дерево" checked>
+                        <label for="param1">Полное дерево</label>
+                      </div>
+                      <div class="radio">
+                        <input class="custom-radio" type="radio" id="param2" name="param" value="Директорское">
+                        <label for="param2">Директорское</label>
+                      </div>
+                      <div class="radio">
+                        <input class="custom-radio" type="radio" id="param3" name="param" value="Своя группа">
+                        <label for="param3">Своя группа</label>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="r_p">
-                  <div class="label_in">
-                    <input type="text" class="tinput" required />
-                    <label class="tlabel">Тип дерева</label>
-                    <span class="array_down"></span>
+                <div class="r_p" style="margin-top: 40px">
+                  <div class="line_param_input" style="width: 100%">
+                    <div class="check_block" style="width: 45%">
+                      <input type="checkbox" class="line_param_checkbox" id="hide" checked/>
+                      <label class="line_param_label line_param_label_search" for="hide">Партнеры только с оборотами за период</label>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="component_body">
-              <div class="r_p" style="float: right">
-                <div class="nav_links">
-                  <a class="brd_green fill w50" href="#">Показать</a>
-                  <a class="brd_green w50 last" href="#" style="margin-right: 0">Сбросить</a>
+              <div class="component_body">
+                <div class="line_param_input">
+                  <div class="l_p">
+                    <div class="label_in">
+                      <input type="text" class="tinput" required />
+                      <label class="tlabel" for>Номер</label>
+                    </div>
+                    <div class="label_in">
+                      <input type="text" class="tinput" required />
+                      <label class="tlabel" for>Территория</label>
+                      <span class="array_down"></span>
+                    </div>
+                    <div class="label_in">
+                      <input type="text" class="tinput" required />
+                      <label class="tlabel" for>Ранг на начало</label>
+                      <span class="array_down"></span>
+                    </div>
+                    <div class="label_in">
+                      <input type="text" class="tinput" required />
+                      <label class="tlabel" for>Расчетный ранг</label>
+                      <span class="array_down"></span>
+                    </div>
+                  </div>
+                  <div class="r_p" style="float: right">
+                    <div class="label_in">
+                      <input type="text" class="tinput" required />
+                      <label class="tlabel" for>ФИО</label>
+                    </div>
+                    <div class="label_in">
+                      <input type="text" class="tinput" required />
+                      <label class="tlabel" for>Город склада обслуживания</label>
+                    </div>
+                    <div class="label_in">
+                      <input type="text" class="tinput" required />
+                      <label class="tlabel" for>Ранг на конец</label>
+                    </div>
+                    <div class="nav_links">
+                      <a class="brd_green fill w50" href="#">Показать</a>
+                      <a class="brd_green w50 last" href="#" style="margin-right: 0">Сбросить</a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

@@ -62,6 +62,10 @@ $(document).ready(function(){
         $('.modal_sale').css({'display': 'block'});
     });
 
+    $('.add_transfer').click(function(){
+        $('.modal_transfer').css({'display': 'block'});
+    });
+
     $('.open_transfer').click(function(){
         $('.modal_transfer').css({'display': 'block'});
     });
