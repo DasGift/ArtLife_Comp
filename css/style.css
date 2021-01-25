@@ -716,6 +716,13 @@ input[type=text] {
   color: #fff;
   background: #32AAA7;
 }
+.middle_part table tr.start_info_modal td {
+  color: #383A41;
+  background: #CEEBEA;
+}
+.middle_part table tr.start_info_modal td a {
+  color: #32AAA7;
+}
 .middle_part table tr.level_two td {
   background: #BEBEBE;
 }
