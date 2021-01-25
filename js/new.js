@@ -46,6 +46,10 @@ $(document).ready(function(){
         $('.modal_add_cat').css({'display': 'block'});
     });
 
+    $('.change_partner').click(function(){
+        $('.modal_partner').css({'display': 'block'});
+    });
+
     $('.add_partner').click(function(){
         $('.modal_partner').css({'display': 'block'});
     });
