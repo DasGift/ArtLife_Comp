@@ -877,6 +877,40 @@ table.bordered tr td {
   border-bottom: none;
 }
 
+.block_edit {
+  display: none;
+  position: relative;
+}
+
+.block_edit_add {
+  position: relative;
+  display: inline-block;
+  width: 80%;
+}
+
+.input_edit_icon {
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 24px;
+}
+
+.array_top_edit {
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+
+.array_bottom_edit {
+  position: absolute;
+  bottom: 7px;
+  right: 0;
+}
+
+.edit_column {
+  position: relative;
+}
+
 //Многострочные столбцы
 .lin_t_top {
   width: 100%;
