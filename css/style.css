@@ -548,6 +548,11 @@ input[type=text] {
   background: #CEEBEA;
 }
 
+.middle_part table tr.head_t_top th {
+  background-color: #32AAA7;
+  color: #FFFFFF;
+}
+
 .hidden_action {
   margin-right: 25px;
 }
@@ -1283,7 +1288,11 @@ table.bordered tr td {
 .modal_sale,
 .modal_add_cat,
 .modal_transfer,
-.modal_group {
+.modal_group,
+.modal_change_sklad,
+.modal_add_money,
+.modal_add_points,
+.modal_send_points {
   display: none;
   position: fixed;
   width: 93%;
@@ -1302,7 +1311,11 @@ table.bordered tr td {
 .modal_sale .line_param_down,
 .modal_add_cat .line_param_down,
 .modal_transfer .line_param_down,
-.modal_group .line_param_down {
+.modal_group .line_param_down,
+.modal_change_sklad .line_param_down,
+.modal_add_money .line_param_down,
+.modal_add_points .line_param_down,
+.modal_send_points .line_param_down {
   position: absolute;
   width: 24px;
   height: 24px;

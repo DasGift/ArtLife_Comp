@@ -409,7 +409,7 @@
             <div class="component_body" style="padding: 0 0 80px">
               <a href="#" class="hidden_action">Стать партнером</a>
               <a href="#" class="hidden_action change_partner">Изменить спонсора</a>
-              <a href="#" class="hidden_action">Изменить склад обслуживания</a>
+              <a href="#" class="hidden_action change_sklad">Изменить склад обслуживания</a>
               <a href="#" class="hidden_action">Терминировать</a>
             </div>
             <div class="modal_send">
@@ -434,9 +434,8 @@
                 <div class="line_param_input">
                   <div class="l_p">
                     <div class="label_in">
-                      <input type="text" class="tinput" />
-                      <label class="tlabel">Партнер-получатель</label>
-                      <a href="#" class="line_param_down"></a>
+                      <input type="text" class="tinput" required />
+                      <label class="tlabel">Партнер для перевода</label>
                     </div>
                     <div class="label_in">
                       <input type="text" class="tinput" required />
@@ -513,57 +512,247 @@
                 </div>
                 <div class="f_part" style="padding-bottom: 0;">
                   <div class="middle_part">
-                    <table class="otch_p bordered">
-                      <thead>
+                    <table class="otch_p">
                       <tr class="head_t">
                         <th>P/номер / Ранг / ФИО</th>
-                        <th>Крактое имя</th>
-                        <th>Полное имя</th>
-                        <th>Логин</th>
+                        <th>ЛО</th>
+                        <th>ГО</th>
+                        <th>НГО</th>
+                        <th>ОО</th>
+                        <th>КО</th>
+                        <th>Не активность</th>
+                        <th>Ранг на начало</th>
+                        <th>Расчетный ранг</th>
+                        <th>Ранг на конец</th>
+                        <th>Терминирован</th>
+                      </tr>
+                      <tr class="start_info">
+                        <td>
+                          <div class="lin_t_top">
+                            <span class="lt1">+</span>
+                            <span class="lt3"><img src="images/mp_icon_white.svg" alt=""/></span>
+                            <a href="#" class="lt3 lt3_link_white">920994</a>
+                          </div>
+                          <div class="lin_t_bot">
+                            Джандильдинов ТИМУР АХМЕТОВИЧ
+                          </div>
+                        </td>
+                        <td>100,00</td>
+                        <td>100,00</td>
+                        <td>100,00</td>
+                        <td>100,00</td>
+                        <td>100,00</td>
+                        <td>0/0/0</td>
+                        <td>Золотой Директор</td>
+                        <td>Золотой Директор</td>
+                        <td>Золотой Директор</td>
+                        <td>Нет</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="lin_t_top">
+                            <span class="lt1">+</span>
+                            <span class="lt3"><img src="images/mp_icon_white.svg" alt=""/></span>
+                            <a href="#" class="lt3 lt3_link_white">920994</a>
+                          </div>
+                          <div class="lin_t_bot">
+                            Джандильдинов ТИМУР АХМЕТОВИЧ
+                          </div>
+                        </td>
+                        <td>100,00</td>
+                        <td>100,00</td>
+                        <td>100,00</td>
+                        <td>100,00</td>
+                        <td>100,00</td>
+                        <td>0/0/0</td>
+                        <td>Золотой Директор</td>
+                        <td>Золотой Директор</td>
+                        <td>Золотой Директор</td>
+                        <td>Нет</td>
+                      </tr>
+                      <tr class="level_two">
+                        <td>
+                          <div class="lin_t_top">
+                            <span class="lt1">+</span>
+                            <span class="lt3"><img src="images/mp_icon_white.svg" alt=""/></span>
+                            <a href="#" class="lt3 lt3_link_white">920994</a>
+                          </div>
+                          <div class="lin_t_bot">
+                            Джандильдинов ТИМУР АХМЕТОВИЧ
+                          </div>
+                        </td>
+                        <td>100,00</td>
+                        <td>100,00</td>
+                        <td>100,00</td>
+                        <td>100,00</td>
+                        <td>100,00</td>
+                        <td>0/0/0</td>
+                        <td>Золотой Директор</td>
+                        <td>Золотой Директор</td>
+                        <td>Золотой Директор</td>
+                        <td>Да</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="component_body" style="width: 100%">
+                <div class="r_p" style="float: right; padding-right: 0">
+                  <div class="nav_links" style="margin-top: 0">
+                    <a class="brd_green fill w50 add_partner" href="#">Выбрать</a>
+                    <a class="brd_green w50 last" href="#" style="margin-right: 0">Отмена</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal_change_sklad">
+              <a href="#" class="closebig"></a>
+              <h3>Сменить склад обслуживания</h3>
+              <div class="component_body">
+                <div class="line_param_input">
+                  <div class="label_in">
+                    <input type="text" class="tinput" required />
+                    <label class="tlabel" for>Поиск по ID и номеру склада</label>
+                    <span class="search"></span>
+                  </div>
+                </div>
+                <div class="f_part" style="padding-bottom: 0;">
+                  <div class="middle_part" style="overflow-x: scroll">
+                    <table class="otch_p bordered">
+                      <thead>
+                      <tr >
+                        <th colspan="3">Склад</th>
+                        <th colspan="4">Складодержатель</th>
+                        <th colspan="4">Активы</th>
+                        <th colspan="2">Обязательства перед</th>
+                        <th colspan="2">Наценка</th>
+                      </tr>
+                      <tr class="head_t_top">
+                        <th style="padding: 8px 25px">Номер</th>
+                        <th>Название</th>
+                        <th>Адрес</th>
+                        <th>Номер</th>
+                        <th>Имя</th>
+                        <th>E-mail</th>
+                        <th>Телефон</th>
+                        <th>Лицевой счет</th>
+                        <th>Товары (по собственной складской цене)</th>
+                        <th>Товары (по отпускной цене дистрибьютора)</th>
+                        <th>Баллы</th>
+                        <th>Привязанными партнёрами</th>
+                        <th>Подскладами</th>
+                        <th>Складская</th>
+                        <th>Территории</th>
                       </tr>
                       </thead>
                       <tbody>
-                      <tr class="start_info start_info_modal">
+                      <tr>
                         <td>
                           <div class="lin_t_top">
-                            <span class="lt3"><img src="images/br1.svg" alt=""/></span>
-                            <a href="#" class="lt3 lt3_link_white">920994</a>
-                          </div>
-                          <div class="lin_t_bot">
-                            Джандильдинов ТИМУР АХМЕТОВИЧ
+                            <span class="lt1">-</span>
+                            <span>3333333</span>
+                            <a href="#" class="lt3">Параметры</a>
                           </div>
                         </td>
-                        <td>Абдурахманов. А.А.</td>
-                        <td>Абдурахманов. Арсен Абдулмажидович</td>
-                        <td>Abdul7799</td>
+                        <td>Кемерово-Абрамово</td>
+                        <td>Кемерово-Абрамово</td>
+                        <td>3333333</td>
+                        <td>Абрамова И.Н.</td>
+                        <td>mail.914329@example.com</td>
+                        <td>+7 (912) 456-88-34</td>
+                        <td>
+                          <div class="lin_t_top">
+                            <a href="#" class="lt3">-1562.76</a>
+                          </div>
+                        </td>
+                        <td>49148.64</td>
+                        <td>59160.4</td>
+                        <td>854.2</td>
+                        <td>49148.64</td>
+                        <td>49148.64</td>
+                        <td>49148.64</td>
+                        <td>49148.64</td>
                       </tr>
                       <tr>
                         <td>
                           <div class="lin_t_top">
-                            <span class="lt3"><img src="images/br1.svg" alt=""/></span>
-                            <a href="#" class="lt3 lt3_link_white">920994</a>
-                          </div>
-                          <div class="lin_t_bot">
-                            Джандильдинов ТИМУР АХМЕТОВИЧ
+                            <span class="lt1">-</span>
+                            <span>3333333</span>
+                            <a href="#" class="lt3">Параметры</a>
                           </div>
                         </td>
-                        <td>Абдурахманов. А.А.</td>
-                        <td>Абдурахманов. Арсен Абдулмажидович</td>
-                        <td>Abdul7799</td>
+                        <td>Кемерово-Абрамово</td>
+                        <td>Кемерово-Абрамово</td>
+                        <td>3333333</td>
+                        <td>Абрамова И.Н.</td>
+                        <td>mail.914329@example.com</td>
+                        <td>+7 (912) 456-88-34</td>
+                        <td>
+                          <div class="lin_t_top">
+                            <a href="#" class="lt3">-1562.76</a>
+                          </div>
+                        </td>
+                        <td>49148.64</td>
+                        <td>59160.4</td>
+                        <td>854.2</td>
+                        <td>49148.64</td>
+                        <td>49148.64</td>
+                        <td>49148.64</td>
+                        <td>49148.64</td>
                       </tr>
                       <tr>
                         <td>
                           <div class="lin_t_top">
-                            <span class="lt3"><img src="images/br1.svg" alt=""/></span>
-                            <a href="#" class="lt3 lt3_link_white">920994</a>
-                          </div>
-                          <div class="lin_t_bot">
-                            Джандильдинов ТИМУР АХМЕТОВИЧ
+                            <span class="lt1">-</span>
+                            <span>3333333</span>
+                            <a href="#" class="lt3">Параметры</a>
                           </div>
                         </td>
-                        <td>Абдурахманов. А.А.</td>
-                        <td>Абдурахманов. Арсен Абдулмажидович</td>
-                        <td>Abdul7799</td>
+                        <td>Кемерово-Абрамово</td>
+                        <td>Кемерово-Абрамово</td>
+                        <td>3333333</td>
+                        <td>Абрамова И.Н.</td>
+                        <td>mail.914329@example.com</td>
+                        <td>+7 (912) 456-88-34</td>
+                        <td>
+                          <div class="lin_t_top">
+                            <a href="#" class="lt3">-1562.76</a>
+                          </div>
+                        </td>
+                        <td>49148.64</td>
+                        <td>59160.4</td>
+                        <td>854.2</td>
+                        <td>49148.64</td>
+                        <td>49148.64</td>
+                        <td>49148.64</td>
+                        <td>49148.64</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="lin_t_top">
+                            <span class="lt1">-</span>
+                            <span>3333333</span>
+                            <a href="#" class="lt3">Параметры</a>
+                          </div>
+                        </td>
+                        <td>Кемерово-Абрамово</td>
+                        <td>Кемерово-Абрамово</td>
+                        <td>3333333</td>
+                        <td>Абрамова И.Н.</td>
+                        <td>mail.914329@example.com</td>
+                        <td>+7 (912) 456-88-34</td>
+                        <td>
+                          <div class="lin_t_top">
+                            <a href="#" class="lt3">-1562.76</a>
+                          </div>
+                        </td>
+                        <td>49148.64</td>
+                        <td>59160.4</td>
+                        <td>854.2</td>
+                        <td>49148.64</td>
+                        <td>49148.64</td>
+                        <td>49148.64</td>
+                        <td>49148.64</td>
                       </tr>
                       </tbody>
                     </table>
@@ -579,14 +768,297 @@
                 </div>
               </div>
             </div>
+            <div class="modal_add_money">
+              <a href="#" class="closebig"></a>
+              <h3>Начислить / списать средства</h3>
+              <div class="component_body">
+                <div class="line_param_input">
+                  <div class="l_p">
+                    <div class="line_param">
+                      <div class="line_param_top">
+                        Баланс
+                      </div>
+                      <div class="line_param_bottom">
+                        18324
+                      </div>
+                    </div>
+                  </div>
+                  <div class="l_p l_p_adaptive">
+                    <div class="line_param">
+                      <div class="line_param_top">
+                        ЛО
+                      </div>
+                      <div class="line_param_bottom">
+                        0
+                      </div>
+                    </div>
+                    <div class="line_param">
+                      <div class="line_param_top">
+                        Резерв
+                      </div>
+                      <div class="line_param_bottom">
+                        100
+                      </div>
+                    </div>
+                    <div class="label_in">
+                      <input type="text" class="tinput" />
+                      <label class="tlabel">Партнер-получатель</label>
+                      <a href="#" class="line_param_down"></a>
+                    </div>
+                    <div class="label_in">
+                      <input type="text" class="tinput" />
+                      <label class="tlabel">Количество к передаче</label>
+                    </div>
+                    <div class="nav_links">
+                      <a class="brd_green fill w50" href="#" style="float: right">Перевести</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="component_body">
+                <h3>Начисление / Списание средств</h3>
+                <div class="line_param_input">
+                  <div class="l_p">
+                    <div class="label_in">
+                      <input type="text" class="tinput" />
+                      <label class="tlabel">Партнер-получатель</label>
+                    </div>
+                    <div class="label_in">
+                      <input type="text" class="tinput" />
+                      <label class="tlabel">Комментарий</label>
+                    </div>
+                  </div>
+                  <div class="l_p l_p_adaptive">
+                    <div class="line_param">
+                      <div class="line_param_top">
+                        ЛО
+                      </div>
+                      <div class="line_param_bottom">
+                        0
+                      </div>
+                    </div>
+                    <div class="line_param">
+                      <div class="line_param_top">
+                        Резерв
+                      </div>
+                      <div class="line_param_bottom">
+                        100
+                      </div>
+                    </div>
+                    <div class="label_in">
+                      <input type="text" class="tinput" />
+                      <label class="tlabel">Партнер-получатель</label>
+                      <a href="#" class="line_param_down"></a>
+                    </div>
+                    <div class="label_in">
+                      <input type="text" class="tinput" />
+                      <label class="tlabel">Количество к передаче</label>
+                    </div>
+                    <div class="nav_links">
+                      <a class="brd_green fill w50" href="#" style="float: right">Перевести</a>
+                    </div>
+                  </div>
+                  <div class="r_p">
+                    <div class="label_in">
+                      <input type="text" class="tinput" />
+                      <label class="tlabel">Сумма</label>
+                    </div>
+                    <div class="nav_links">
+                      <a class="brd_green fill w50" href="#" style="width: 100%">Перевести</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal_send_points">
+              <a href="#" class="closebig"></a>
+              <h3>Перевести между лицевыми счетами</h3>
+              <p style="margin: 25px 0">Перевести из резерва партнера: <span style="font-weight: bold; text-transform: uppercase">Михайлов Д.И.</span></p>
+              <div class="component_body">
+                <div class="line_param_input">
+                  <div class="l_p">
+                    <div class="line_param">
+                      <div class="line_param_top">
+                        ЛО
+                      </div>
+                      <div class="line_param_bottom">
+                        0
+                      </div>
+                    </div>
+                    <div class="label_in">
+                      <input type="text" class="tinput" />
+                      <label class="tlabel">Партнер-получатель</label>
+                      <a href="#" class="line_param_down"></a>
+                    </div>
+                    <div class="label_in">
+                      <input type="text" class="tinput" />
+                      <label class="tlabel">Комментарий</label>
+                    </div>
+                  </div>
+                  <div class="r_p">
+                    <div class="line_param">
+                      <div class="line_param_top">
+                        Резерв
+                      </div>
+                      <div class="line_param_bottom">
+                        100
+                      </div>
+                    </div>
+                    <div class="label_in">
+                      <input type="text" class="tinput" />
+                      <label class="tlabel">Количество к передаче</label>
+                    </div>
+                    <div class="nav_links">
+                      <a class="brd_green fill w50" href="#" style="float: right">Перевести</a>
+                    </div>
+                  </div>
+                  <div class="l_p l_p_adaptive">
+                    <div class="line_param">
+                      <div class="line_param_top">
+                        ЛО
+                      </div>
+                      <div class="line_param_bottom">
+                        0
+                      </div>
+                    </div>
+                    <div class="line_param">
+                      <div class="line_param_top">
+                        Резерв
+                      </div>
+                      <div class="line_param_bottom">
+                        100
+                      </div>
+                    </div>
+                    <div class="label_in">
+                      <input type="text" class="tinput" />
+                      <label class="tlabel">Партнер-получатель</label>
+                      <a href="#" class="line_param_down"></a>
+                    </div>
+                    <div class="label_in">
+                      <input type="text" class="tinput" />
+                      <label class="tlabel">Количество к передаче</label>
+                    </div>
+                    <div class="nav_links">
+                      <a class="brd_green fill w50" href="#" style="float: right">Перевести</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal_add_points">
+              <a href="#" class="closebig"></a>
+              <h3>Начислить / списать баллы</h3>
+              <div class="component_body">
+                <div class="line_param_input">
+                  <div class="l_p">
+                    <div class="line_param">
+                      <div class="line_param_top">
+                        Баланс
+                      </div>
+                      <div class="line_param_bottom">
+                        18324
+                      </div>
+                    </div>
+                  </div>
+                  <div class="l_p l_p_adaptive">
+                    <div class="line_param">
+                      <div class="line_param_top">
+                        ЛО
+                      </div>
+                      <div class="line_param_bottom">
+                        0
+                      </div>
+                    </div>
+                    <div class="line_param">
+                      <div class="line_param_top">
+                        Резерв
+                      </div>
+                      <div class="line_param_bottom">
+                        100
+                      </div>
+                    </div>
+                    <div class="label_in">
+                      <input type="text" class="tinput" />
+                      <label class="tlabel">Партнер-получатель</label>
+                      <a href="#" class="line_param_down"></a>
+                    </div>
+                    <div class="label_in">
+                      <input type="text" class="tinput" />
+                      <label class="tlabel">Количество к передаче</label>
+                    </div>
+                    <div class="nav_links">
+                      <a class="brd_green fill w50" href="#" style="float: right">Перевести</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="component_body">
+                <h3>Начисление / Списание средств</h3>
+                <div class="line_param_input">
+                  <div class="l_p">
+                    <div class="label_in">
+                      <input type="text" class="tinput" />
+                      <label class="tlabel">Партнер-получатель</label>
+                    </div>
+                    <div class="label_in">
+                      <input type="text" class="tinput" />
+                      <label class="tlabel">Комментарий</label>
+                    </div>
+                  </div>
+                  <div class="l_p l_p_adaptive">
+                    <div class="line_param">
+                      <div class="line_param_top">
+                        ЛО
+                      </div>
+                      <div class="line_param_bottom">
+                        0
+                      </div>
+                    </div>
+                    <div class="line_param">
+                      <div class="line_param_top">
+                        Резерв
+                      </div>
+                      <div class="line_param_bottom">
+                        100
+                      </div>
+                    </div>
+                    <div class="label_in">
+                      <input type="text" class="tinput" />
+                      <label class="tlabel">Партнер-получатель</label>
+                      <a href="#" class="line_param_down"></a>
+                    </div>
+                    <div class="label_in">
+                      <input type="text" class="tinput" />
+                      <label class="tlabel">Количество к передаче</label>
+                    </div>
+                    <div class="nav_links">
+                      <a class="brd_green fill w50" href="#" style="float: right">Перевести</a>
+                    </div>
+                  </div>
+                  <div class="r_p">
+                    <div class="label_in">
+                      <input type="text" class="tinput" />
+                      <label class="tlabel">ЛО</label>
+                    </div>
+                    <div class="label_in">
+                      <input type="text" class="tinput" />
+                      <label class="tlabel">Резерв</label>
+                    </div>
+                    <div class="nav_links">
+                      <a class="brd_green fill w50" href="#" style="width: 100%">Перевести</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="footer">
           <div class="footer_line">
-            <a href="#" class="footer_line_link">Начислить / списать средства</a>
-            <a href="#" class="footer_line_link">Перевести между лицевыми счетами</a>
-            <a href="#" class="footer_line_link">Начислить / списать баллы</a>
-            <a href="#" class="footer_line_link send_points">Перевести баллы между партнерами</a>
+            <a href="#" class="footer_line_link add_money">Начислить / списать средства</a>
+            <a href="#" class="footer_line_link send_points">Перевести между лицевыми счетами</a>
+            <a href="#" class="footer_line_link add_points">Начислить / списать баллы</a>
+            <a href="#" class="footer_line_link send_points_partners">Перевести баллы между партнерами</a>
           </div>
         </div>
       </div>

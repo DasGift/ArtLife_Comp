@@ -50,6 +50,10 @@ $(document).ready(function(){
         $('.modal_partner').css({'display': 'block'});
     });
 
+    $('.change_sklad').click(function(){
+        $('.modal_change_sklad').css({'display': 'block'});
+    });
+
     $('.add_partner').click(function(){
         $('.modal_partner').css({'display': 'block'});
     });
@@ -58,7 +62,7 @@ $(document).ready(function(){
         $('.modal_group').css({'display': 'block'});
     });
 
-    $('.send_points').click(function(){
+    $('.send_points_partners').click(function(){
         $('.modal_send').css({'display': 'block'});
     });
 
@@ -68,6 +72,14 @@ $(document).ready(function(){
 
     $('.add_transfer').click(function(){
         $('.modal_transfer').css({'display': 'block'});
+    });
+
+    $('.add_money').click(function(){
+        $('.modal_add_money').css({'display': 'block'});
+    });
+
+    $('.add_points').click(function(){
+        $('.modal_add_points').css({'display': 'block'});
     });
 
     $('.open_transfer').click(function(){
@@ -85,6 +97,10 @@ $(document).ready(function(){
         $(this).css({'display': 'none'});
     });
 
+    $('.send_points').click(function(){
+        $('.modal_send_points').css({'display': 'block'});
+    });
+
     $('.closebig').click(function(){
         $('.modal_partner').css({'display': 'none'});
         $('.modal_send').css({'display': 'none'});
@@ -93,6 +109,9 @@ $(document).ready(function(){
         $('.modal_add_cat').css({'display': 'none'});
         $('.modal_transfer').css({'display': 'none'});
         $('.modal_sale').css({'display': 'none'});
+        $('.modal_change_sklad').css({'display': 'none'});
+        $('.modal_add_money').css({'display': 'none'});
+        $('.modal_send_points').css({'display': 'none'});
     });
 
     $('a.more').click(function(){

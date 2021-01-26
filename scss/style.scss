@@ -603,6 +603,11 @@ input[type="text"] {
   }
 }
 
+.middle_part table tr.head_t_top th {
+  background-color: #32AAA7;
+  color: #FFFFFF;
+}
+
 //Скрываемые блоки в карточке парнтнера
 .hidden_action {
   margin-right: 25px;
@@ -1391,7 +1396,11 @@ table.bordered tr td {
 .modal_sale,
 .modal_add_cat,
 .modal_transfer,
-.modal_group {
+.modal_group,
+.modal_change_sklad,
+.modal_add_money,
+.modal_add_points,
+.modal_send_points {
   display: none;
   position: fixed;
   width: 93%;
