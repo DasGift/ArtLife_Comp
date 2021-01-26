@@ -1723,7 +1723,7 @@ table.bordered tr td {
   width: 10%;
   float: right;
 
-  .cart_link {
+  .cart_link_icon {
     float: right;
   }
 }
@@ -1745,10 +1745,6 @@ table.bordered tr td {
     position: absolute;
     top: 35px;
     right: 18px;
-
-    a {
-      float: right;
-    }
   }
 }
 

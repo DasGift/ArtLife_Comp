@@ -1607,7 +1607,7 @@ table.bordered tr td {
   width: 10%;
   float: right;
 }
-.r_p_cart .cart_link {
+.r_p_cart .cart_link_icon {
   float: right;
 }
 
@@ -1627,9 +1627,6 @@ table.bordered tr td {
   position: absolute;
   top: 35px;
   right: 18px;
-}
-.line_param_cart-edit .r_p_cart a {
-  float: right;
 }
 
 .cart_link {
