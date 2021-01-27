@@ -421,12 +421,14 @@ input[type=text] {
   box-sizing: border-box;
 }
 
-.line_param {
+.line_param,
+.line_param_rp {
   position: relative;
   width: 100%;
   margin-bottom: 24px;
 }
-.line_param_top {
+.line_param_top,
+.line_param_rp_top {
   font-family: FuturaPT-Book;
   font-style: normal;
   font-weight: normal;
@@ -434,7 +436,8 @@ input[type=text] {
   line-height: 12px;
   color: #9A9A9A;
 }
-.line_param_bottom {
+.line_param_bottom,
+.line_param_rp_bottom {
   font-family: FuturaPT-Book;
   font-style: normal;
   font-weight: normal;
@@ -443,18 +446,29 @@ input[type=text] {
   color: #383A41;
   padding: 4px 0 12px;
 }
-.line_param_border {
+.line_param_border,
+.line_param_rp_border {
   width: 100%;
   height: 1px;
   background-color: #DEE2F3;
 }
-.line_param_clear {
+.line_param_clear, .line_param_done,
+.line_param_rp_clear,
+.line_param_rp_done {
   position: absolute;
   width: 24px;
   height: 24px;
   background: url(../images/clear.svg) no-repeat center;
   right: -5px;
   top: 16px;
+}
+.line_param_done,
+.line_param_rp_done {
+  background: url(../images/done_green.svg) no-repeat center;
+}
+
+.line_param_rp {
+  margin-bottom: 18px;
 }
 
 .more,
@@ -547,6 +561,10 @@ input[type=text] {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+
+.middle_part table tr.line_hover:hover {
+  background-color: #E6F4F4;
 }
 
 .middle_part table tr.table-categhories td,
@@ -1628,6 +1646,10 @@ table.bordered tr td {
   margin-top: 15px;
 }
 
+.r_p_cart_add {
+  margin-top: 20px;
+}
+
 .l_p_cart,
 .c_p_cart {
   display: inline-block;
@@ -1853,4 +1875,63 @@ table.bordered tr td {
 }
 .icon_geo:hover {
   background-image: url("../images/icon_geo_active.svg");
+}
+
+.line_param_cart-edit {
+  position: relative;
+  background: #F3F6FF;
+  border: 1px solid #BABABA;
+  box-sizing: border-box;
+  border-radius: 1px;
+}
+.line_param_cart-edit .r_p_cart {
+  position: absolute;
+  top: 35px;
+  right: 18px;
+}
+.line_param_cart-edit .r_p_cart a {
+  float: right;
+}
+
+.l_p_cart,
+.c_p_cart {
+  display: inline-block;
+  width: 44%;
+}
+
+.c_p_cart span, .c_p_cart .input_edit {
+  font-family: FuturaPT-Book;
+}
+.c_p_cart span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  color: #9A9A9A;
+}
+.c_p_cart .input_edit,
+.c_p_cart span.cart_text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #383A41;
+}
+
+.l_p_cart .cart_title {
+  font-family: FuturaPT-Demi;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #383A41;
+}
+
+.r_p_cart {
+  display: inline-block;
+  width: 10%;
+  float: right;
+}
+.r_p_cart .cart_link {
+  float: right;
 }
