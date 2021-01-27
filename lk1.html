@@ -407,10 +407,10 @@
               </div>
             </div>
             <div class="component_body" style="padding: 0 0 80px">
-              <a href="#" class="hidden_action">Стать партнером</a>
+              <a href="#" class="hidden_action question_partner">Стать партнером</a>
               <a href="#" class="hidden_action change_partner">Изменить спонсора</a>
               <a href="#" class="hidden_action change_sklad">Изменить склад обслуживания</a>
-              <a href="#" class="hidden_action">Терминировать</a>
+              <a href="#" class="hidden_action question_term">Терминировать</a>
             </div>
             <div class="modal_send">
               <a href="#" class="closebig"></a>
@@ -434,8 +434,9 @@
                 <div class="line_param_input">
                   <div class="l_p">
                     <div class="label_in">
-                      <input type="text" class="tinput" required />
-                      <label class="tlabel">Партнер для перевода</label>
+                      <input type="text" class="tinput" />
+                      <label class="tlabel">Партнер-получатель</label>
+                      <a href="#" class="line_param_down"></a>
                     </div>
                     <div class="label_in">
                       <input type="text" class="tinput" required />
@@ -443,6 +444,10 @@
                     </div>
                   </div>
                   <div class="r_p">
+                    <div class="label_in">
+                      <input type="text" class="tinput" required />
+                      <label class="tlabel">Партнер для перевода</label>
+                    </div>
                     <div class="label_in">
                       <input type="text" class="tinput" required />
                       <label class="tlabel">Сумма</label>
@@ -623,9 +628,6 @@
                       <tr >
                         <th colspan="3">Склад</th>
                         <th colspan="4">Складодержатель</th>
-                        <th colspan="4">Активы</th>
-                        <th colspan="2">Обязательства перед</th>
-                        <th colspan="2">Наценка</th>
                       </tr>
                       <tr class="head_t_top">
                         <th style="padding: 8px 25px">Номер</th>
@@ -635,14 +637,6 @@
                         <th>Имя</th>
                         <th>E-mail</th>
                         <th>Телефон</th>
-                        <th>Лицевой счет</th>
-                        <th>Товары (по собственной складской цене)</th>
-                        <th>Товары (по отпускной цене дистрибьютора)</th>
-                        <th>Баллы</th>
-                        <th>Привязанными партнёрами</th>
-                        <th>Подскладами</th>
-                        <th>Складская</th>
-                        <th>Территории</th>
                       </tr>
                       </thead>
                       <tbody>
@@ -660,18 +654,6 @@
                         <td>Абрамова И.Н.</td>
                         <td>mail.914329@example.com</td>
                         <td>+7 (912) 456-88-34</td>
-                        <td>
-                          <div class="lin_t_top">
-                            <a href="#" class="lt3">-1562.76</a>
-                          </div>
-                        </td>
-                        <td>49148.64</td>
-                        <td>59160.4</td>
-                        <td>854.2</td>
-                        <td>49148.64</td>
-                        <td>49148.64</td>
-                        <td>49148.64</td>
-                        <td>49148.64</td>
                       </tr>
                       <tr>
                         <td>
@@ -687,18 +669,6 @@
                         <td>Абрамова И.Н.</td>
                         <td>mail.914329@example.com</td>
                         <td>+7 (912) 456-88-34</td>
-                        <td>
-                          <div class="lin_t_top">
-                            <a href="#" class="lt3">-1562.76</a>
-                          </div>
-                        </td>
-                        <td>49148.64</td>
-                        <td>59160.4</td>
-                        <td>854.2</td>
-                        <td>49148.64</td>
-                        <td>49148.64</td>
-                        <td>49148.64</td>
-                        <td>49148.64</td>
                       </tr>
                       <tr>
                         <td>
@@ -714,18 +684,6 @@
                         <td>Абрамова И.Н.</td>
                         <td>mail.914329@example.com</td>
                         <td>+7 (912) 456-88-34</td>
-                        <td>
-                          <div class="lin_t_top">
-                            <a href="#" class="lt3">-1562.76</a>
-                          </div>
-                        </td>
-                        <td>49148.64</td>
-                        <td>59160.4</td>
-                        <td>854.2</td>
-                        <td>49148.64</td>
-                        <td>49148.64</td>
-                        <td>49148.64</td>
-                        <td>49148.64</td>
                       </tr>
                       <tr>
                         <td>
@@ -741,18 +699,6 @@
                         <td>Абрамова И.Н.</td>
                         <td>mail.914329@example.com</td>
                         <td>+7 (912) 456-88-34</td>
-                        <td>
-                          <div class="lin_t_top">
-                            <a href="#" class="lt3">-1562.76</a>
-                          </div>
-                        </td>
-                        <td>49148.64</td>
-                        <td>59160.4</td>
-                        <td>854.2</td>
-                        <td>49148.64</td>
-                        <td>49148.64</td>
-                        <td>49148.64</td>
-                        <td>49148.64</td>
                       </tr>
                       </tbody>
                     </table>
@@ -951,98 +897,32 @@
               <div class="component_body">
                 <div class="line_param_input">
                   <div class="l_p">
-                    <div class="line_param">
-                      <div class="line_param_top">
-                        Баланс
-                      </div>
-                      <div class="line_param_bottom">
-                        18324
-                      </div>
+                    <div class="label_in">
+                      <input type="text" class="tinput" />
+                      <label class="tlabel">ЛО</label>
                     </div>
                   </div>
-                  <div class="l_p l_p_adaptive">
-                    <div class="line_param">
-                      <div class="line_param_top">
-                        ЛО
-                      </div>
-                      <div class="line_param_bottom">
-                        0
-                      </div>
-                    </div>
-                    <div class="line_param">
-                      <div class="line_param_top">
-                        Резерв
-                      </div>
-                      <div class="line_param_bottom">
-                        100
-                      </div>
-                    </div>
+                  <div class="r_p">
                     <div class="label_in">
                       <input type="text" class="tinput" />
-                      <label class="tlabel">Партнер-получатель</label>
-                      <a href="#" class="line_param_down"></a>
-                    </div>
-                    <div class="label_in">
-                      <input type="text" class="tinput" />
-                      <label class="tlabel">Количество к передаче</label>
-                    </div>
-                    <div class="nav_links">
-                      <a class="brd_green fill w50" href="#" style="float: right">Перевести</a>
+                      <label class="tlabel">Резерв</label>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="component_body">
-                <h3>Начисление / Списание средств</h3>
+                <h3>Начисление/ списание баллов</h3>
                 <div class="line_param_input">
                   <div class="l_p">
                     <div class="label_in">
                       <input type="text" class="tinput" />
                       <label class="tlabel">Партнер-получатель</label>
                     </div>
-                    <div class="label_in">
-                      <input type="text" class="tinput" />
-                      <label class="tlabel">Комментарий</label>
-                    </div>
-                  </div>
-                  <div class="l_p l_p_adaptive">
-                    <div class="line_param">
-                      <div class="line_param_top">
-                        ЛО
-                      </div>
-                      <div class="line_param_bottom">
-                        0
-                      </div>
-                    </div>
-                    <div class="line_param">
-                      <div class="line_param_top">
-                        Резерв
-                      </div>
-                      <div class="line_param_bottom">
-                        100
-                      </div>
-                    </div>
-                    <div class="label_in">
-                      <input type="text" class="tinput" />
-                      <label class="tlabel">Партнер-получатель</label>
-                      <a href="#" class="line_param_down"></a>
-                    </div>
-                    <div class="label_in">
-                      <input type="text" class="tinput" />
-                      <label class="tlabel">Количество к передаче</label>
-                    </div>
-                    <div class="nav_links">
-                      <a class="brd_green fill w50" href="#" style="float: right">Перевести</a>
-                    </div>
                   </div>
                   <div class="r_p">
                     <div class="label_in">
                       <input type="text" class="tinput" />
-                      <label class="tlabel">ЛО</label>
-                    </div>
-                    <div class="label_in">
-                      <input type="text" class="tinput" />
-                      <label class="tlabel">Резерв</label>
+                      <label class="tlabel">Комментарий</label>
                     </div>
                     <div class="nav_links">
                       <a class="brd_green fill w50" href="#" style="width: 100%">Перевести</a>
@@ -1059,6 +939,28 @@
             <a href="#" class="footer_line_link send_points">Перевести между лицевыми счетами</a>
             <a href="#" class="footer_line_link add_points">Начислить / списать баллы</a>
             <a href="#" class="footer_line_link send_points_partners">Перевести баллы между партнерами</a>
+          </div>
+        </div>
+        <div class="modal_question">
+          <div class="modal_question_block">
+            <div class="component_body">
+              <div style="padding-top: 5%">
+                <a href="#" class="closebig"></a>
+                <h3 class="title_partner">Стать партнером</h3>
+                <h3 class="title_term">Терминировать</h3>
+              </div>
+              <div class="line_param_input">
+                <div class="label_in" style="padding-bottom: 0">
+                  <h3 style="text-align: center; margin-bottom: 0">Вы уверены?</h3>
+                </div>
+                <div class="r_p" style="width: 100%; padding: 0 5% 15px">
+                  <div class="nav_links">
+                    <a class="brd_green fill w50" href="#">Подтвердить</a>
+                    <a class="brd_green w50 last" href="#">Отменить</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

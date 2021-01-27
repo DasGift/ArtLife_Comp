@@ -20,10 +20,6 @@ $(document).ready(function(){
 
     $('.footer_line a').click(function(){
         $('.modal_send').addClass('modal_send_active');
-
-        if ($('.modal_send').hasClass('modal_send_active')) {
-            $('.overlay').css({'display': 'block'})
-        }
     });
 
     $('.line_param_input .calendar').click(function(){
@@ -60,6 +56,7 @@ $(document).ready(function(){
 
     $('.add_group').click(function(){
         $('.modal_group').css({'display': 'block'});
+        $('.modal_add_cat').css({'display': 'block'});
     });
 
     $('.send_points_partners').click(function(){
@@ -101,6 +98,20 @@ $(document).ready(function(){
         $('.modal_send_points').css({'display': 'block'});
     });
 
+    $('.question_partner').click(function(){
+        $('.modal_question').css({'display': 'block'});
+        $('.title_term').css({'display': 'none'});
+        $('.title_partner').css({'display': 'block'});
+        $('.overlay').css({'display': 'block'});
+    });
+
+    $('.question_term').click(function(){
+        $('.modal_question').css({'display': 'block'});
+        $('.title_partner').css({'display': 'none'});
+        $('.title_term').css({'display': 'block'});
+        $('.overlay').css({'display': 'block'});
+    });
+
     $('.closebig').click(function(){
         $('.modal_partner').css({'display': 'none'});
         $('.modal_send').css({'display': 'none'});
@@ -112,6 +123,9 @@ $(document).ready(function(){
         $('.modal_change_sklad').css({'display': 'none'});
         $('.modal_add_money').css({'display': 'none'});
         $('.modal_send_points').css({'display': 'none'});
+        $('.modal_add_points').css({'display': 'none'});
+        $('.modal_question').css({'display': 'none'});
+        $('.overlay').css({'display': 'none'});
     });
 
     $('a.more').click(function(){
