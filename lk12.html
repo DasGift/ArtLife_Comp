@@ -508,8 +508,8 @@
           </div>
           <div class="modal_transfer">
             <a href="#" class="closebig"></a>
-            <h3>Перевод средств другому человеку</h3>
-            <p style="margin: 25px 0">Перевести из резерва партнера: <span style="font-weight: bold; text-transform: uppercase">Михайлов Д.И.</span></p>
+            <h3>Перевести между лицевыми счетами</h3>
+            <p style="margin: 25px 0; color: #383A41;">Перевести из резерва партнера: <span style="font-weight: bold; text-transform: uppercase">Михайлов Д.И.</span></p>
             <div class="component_body">
               <div class="line_param_input">
                 <div class="l_p">
@@ -518,7 +518,7 @@
                       Баланс
                     </div>
                     <div class="line_param_bottom">
-                      0
+                      456789
                     </div>
                   </div>
                 </div>
@@ -528,14 +528,22 @@
               <div class="line_param_input">
                 <div class="l_p">
                   <div class="label_in">
-                    <input type="text" class="tinput" required />
+                    <input type="text" class="tinput" />
                     <label class="tlabel">Партнер-получатель</label>
                     <a href="#" class="line_param_down"></a>
+                  </div>
+                  <div class="label_in">
+                    <input type="text" class="tinput" />
+                    <label class="tlabel">Перевести с лицевого счета партнера</label>
                   </div>
                 </div>
                 <div class="r_p">
                   <div class="label_in">
-                    <input type="text" class="tinput" required />
+                    <input type="text" class="tinput" />
+                    <label class="tlabel">Количество к передаче</label>
+                  </div>
+                  <div class="label_in">
+                    <input type="text" class="tinput" />
                     <label class="tlabel">Комментарий</label>
                   </div>
                   <div class="nav_links">
@@ -656,46 +664,35 @@
           </div>
           <div class="modal_line">
             <a href="#" class="closebig"></a>
-            <h3>Перевести между лицевыми счетами</h3>
-            <p style="margin: 25px 0; color: #383A41;">Перевести из резерва партнера: <span style="font-weight: bold; text-transform: uppercase">Михайлов Д.И.</span></p>
-            <div class="component_body">
-              <div class="line_param_input">
-                <div class="l_p">
-                  <div class="line_param">
-                    <div class="line_param_top">
-                      Баланс
-                    </div>
-                    <div class="line_param_bottom">
-                      456789
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <h3>Фильтры</h3>
             <div class="component_body">
               <div class="line_param_input">
                 <div class="l_p">
                   <div class="label_in">
                     <input type="text" class="tinput" />
-                    <label class="tlabel">Партнер-получатель</label>
-                    <a href="#" class="line_param_down"></a>
+                    <label class="tlabel">Номер склада</label>
                   </div>
                   <div class="label_in">
                     <input type="text" class="tinput" />
-                    <label class="tlabel">Перевести с лицевого счета партнера</label>
+                    <label class="tlabel">Наименование склада</label>
+                  </div>
+                  <div class="label_in">
+                    <input type="text" class="tinput" />
+                    <label class="tlabel">Город</label>
                   </div>
                 </div>
                 <div class="r_p">
                   <div class="label_in">
                     <input type="text" class="tinput" />
-                    <label class="tlabel">Количество к передаче</label>
+                    <label class="tlabel">Номер партнёра / ФИО</label>
                   </div>
                   <div class="label_in">
                     <input type="text" class="tinput" />
-                    <label class="tlabel">Комментарий</label>
+                    <label class="tlabel">Территория</label>
                   </div>
                   <div class="nav_links">
-                    <a class="brd_green fill w50" href="#" style="float: right">Перевести</a>
+                    <a class="brd_green fill w50" href="#">Показать</a>
+                    <a class="brd_green w50 last" href="#" style="margin-right: 0">Сбросить</a>
                   </div>
                 </div>
               </div>
