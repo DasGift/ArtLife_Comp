@@ -1899,6 +1899,9 @@ table.bordered tr td {
   width: 44%;
 }
 
+.c_p_cart {
+  position: relative;
+}
 .c_p_cart span, .c_p_cart .input_edit {
   font-family: FuturaPT-Book;
 }
@@ -1916,6 +1919,16 @@ table.bordered tr td {
   font-size: 14px;
   line-height: 16px;
   color: #383A41;
+}
+.c_p_cart .array_down {
+  display: block;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  right: 0;
+  bottom: 1px;
+  background: url(../images/array_down.png) no-repeat center;
 }
 
 .l_p_cart .cart_title {
